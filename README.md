@@ -1,60 +1,55 @@
 # FMPS Marketing & Trade Show Coordination Tool
 
-A browser-based coordination tool for managing FMPS trade shows, roadshows, team travel, asset reservations, and thought leadership — replacing the shared Excel workbook with a real-time, multi-user web application.
+A lightweight, browser-based coordination tool that replaces the shared Excel workbook. No servers, no databases, no build tools — just HTML/CSS/JS files hosted on SharePoint.
 
-## Quick Start
+## How It Works
 
-### Prerequisites
-- Node.js 18+
-- SharePoint site with admin access (for list provisioning)
-- Azure AD App Registration (for authentication)
-
-### 1. Install Dependencies
-```bash
-npm install
+```
+┌──────────────────────────────────────────────┐
+│  SharePoint Document Library ("FMPSData")    │
+│                                              │
+│  📄 index.html   ← The app (open this)      │
+│  📄 style.css    ← Styling                  │
+│  📄 data.js      ← Default config           │
+│  📄 storage.js   ← Sync engine              │
+│  📄 app.js       ← Application logic        │
+│  📄 fmps-data.json  ← Shared data (auto)    │
+│                                              │
+└──────────────────────────────────────────────┘
+         ↕ Everyone reads the same link
+    All changes write to fmps-data.json
+    App polls every 15s for updates from others
 ```
 
-### 2. Configure Authentication
-Edit `src/config/authConfig.ts` and replace:
-- `YOUR_CLIENT_ID` — Azure AD App Registration Client ID
-- `YOUR_TENANT_ID` — Your Microsoft 365 tenant ID
-- `YOUR_SHAREPOINT_SITE_URL` — Target SharePoint site URL
-
-### 3. Provision SharePoint Lists
-```powershell
-# Requires PnP.PowerShell module
-Install-Module PnP.PowerShell -Scope CurrentUser
-cd scripts
-.\create-sharepoint-lists.ps1 -SiteUrl "https://panduit.sharepoint.com/sites/FMPSCoordination"
-```
-
-### 4. Import Existing Data
-```powershell
-.\import-excel-data.ps1 -SiteUrl "https://panduit.sharepoint.com/sites/FMPSCoordination" -ExcelPath "..\FMPS Marketing & Tradeshows.xlsx"
-```
-
-### 5. Run Locally
-```bash
-npm run dev
-```
-Open http://localhost:3000
+**Sync mechanism**: The app stores all data in a single JSON file (`fmps-data.json`) in the same SharePoint document library. When anyone makes a change, it saves to that file. Every 15 seconds, the app checks if someone else made changes and refreshes automatically.
 
 ---
 
-## Deployment to SharePoint
+## Deployment (5 minutes)
 
-### Option A: SharePoint App Catalog (Recommended)
-1. Build: `npm run build`
-2. Package the SPFx web part (see `spfx/` folder)
-3. Upload `.sppkg` to your SharePoint App Catalog
-4. Add the web part to a SharePoint page
-5. Share the page URL with your team
+### Step 1: Create a Document Library
+1. Go to your SharePoint site (e.g., `https://panduit.sharepoint.com/sites/FMPS`)
+2. Click **+ New** → **Document Library**
+3. Name it `FMPSData`
 
-### Option B: Azure Static Web Apps
-1. Push to GitHub
-2. Create Azure Static Web App linked to this repo
-3. Configure MSAL redirect URIs in Azure AD
-4. Share the Azure URL
+### Step 2: Upload the App Files
+Upload these files to the `FMPSData` library:
+- `index.html`
+- `style.css`
+- `data.js`
+- `storage.js`
+- `app.js`
+
+### Step 3: Configure the App
+1. Open `index.html` from the library (it will open in browser)
+2. Go to **⚙️ Settings** tab
+3. Enter your SharePoint site URL and library name
+4. Click **Save & Connect**
+
+### Step 4: Share the Link
+Copy the URL to `index.html` and share it with your team. That's it!
+
+> **Alternative**: If SharePoint blocks running HTML directly, create a SharePoint page and add a **File Viewer** or **Embed** web part pointing to the `index.html` file.
 
 ---
 
@@ -62,73 +57,44 @@ Open http://localhost:3000
 
 | Feature | Description |
 |---------|-------------|
-| 📅 Calendar View | Interactive monthly/quarterly calendar with color-coded events |
-| 📋 Event Management | Full CRUD for trade shows, roadshows, local events, webinars |
-| 📦 Asset Tracking | Inventory management with real-time availability & reservations |
-| 🎤 Thought Leadership | Track speaking submissions, deadlines, and abstracts |
-| 👥 Team Travel | Per-person travel calendars with conflict detection |
-| ⚙️ Admin Config | Manage all dropdown/picklist values in one place |
-| 🔄 Real-time Sync | Auto-refreshes every 30 seconds + on-focus updates |
-| 🔒 SSO Auth | Single sign-on with Microsoft 365 credentials |
+| 📅 Calendar | Monthly calendar view with color-coded events |
+| 📋 Events | Full event management — add, edit, filter, delete |
+| 📦 Assets | Inventory tracking with reservation system |
+| 👥 Team Travel | Per-person travel schedule at a glance |
+| 🎤 Speaking | Thought leadership submissions & deadlines |
+| ⚙️ Settings | Manage dropdowns, team members, connection |
+| 🔄 Auto-Sync | Polls for changes every 15 seconds |
 
 ---
 
-## Architecture
+## Local Development / Testing
 
-```
-Browser (React + Fluent UI)
-    ↕ Microsoft Graph API
-SharePoint Lists (Data Store)
-    ↕ Built-in versioning & permissions
-Microsoft 365 (Auth via MSAL)
-```
-
-No additional servers or databases needed. SharePoint Lists provide:
-- Multi-user concurrent access
-- Version history on every change
-- Permission-based access control
-- 30-second polling for real-time sync
+Just open `index.html` in a browser. Without a SharePoint connection, data saves to `localStorage` (single-user only). Configure a SharePoint site in Settings to enable multi-user sync.
 
 ---
 
-## Azure AD App Registration Setup
+## Data Stored
 
-1. Go to [Azure Portal](https://portal.azure.com) → Azure Active Directory → App registrations
-2. Click "New registration"
-3. Name: `FMPS Coordination Tool`
-4. Supported account types: "Accounts in this organizational directory only"
-5. Redirect URI: `http://localhost:3000` (add production URL later)
-6. Under API permissions, add:
-   - `Microsoft Graph` → `User.Read` (delegated)
-   - `Microsoft Graph` → `Sites.ReadWrite.All` (delegated)
-7. Grant admin consent
-8. Copy the **Application (client) ID** and **Directory (tenant) ID** into `authConfig.ts`
+All tool data lives in one JSON file with this structure:
+- **events** — trade shows, roadshows, local events, webinars
+- **assets** — inventory items with part numbers and quantities
+- **reservations** — which assets are booked for which events
+- **thoughtLeadership** — speaking submissions and deadlines
+- **config** — dropdown options, team member list
 
 ---
 
-## Project Structure
+## No Build Tools Required
 
-```
-src/
-├── components/          # React UI components
-│   ├── Layout/         # App shell, header, navigation
-│   ├── Calendar/       # Calendar view with event cards
-│   ├── Events/         # Event table, forms, detail views
-│   ├── Assets/         # Asset inventory & reservations
-│   ├── ThoughtLeadership/  # Speaking/content tracking
-│   ├── Team/           # Team travel calendar
-│   └── Admin/          # Configuration management
-├── services/           # SharePoint Graph API integration
-├── hooks/              # React hooks for data management
-├── types/              # TypeScript interfaces
-└── config/             # Authentication & site config
-scripts/
-├── create-sharepoint-lists.ps1   # Provision SP lists
-└── import-excel-data.ps1         # Migrate from Excel
-```
+This is plain HTML, CSS, and JavaScript. No npm, no Node.js, no React, no compilation. Edit any file in a text editor and re-upload to SharePoint.
 
 ---
 
-## License
+## Troubleshooting
 
-Internal use only — Panduit Corporation.
+| Issue | Fix |
+|-------|-----|
+| "HTML opens as download" | Use a SharePoint Embed web part or set content type |
+| "Can't connect" | Verify site URL ends without slash, library name matches exactly |
+| "Changes not syncing" | Check Settings → Test Connection; verify library permissions |
+| "Data seems lost" | Check `fmps-data.json` in the library — all data is there |
