@@ -1525,6 +1525,42 @@ function initSettings() {
         }
     });
 
+    // Cloud mode (Power Automate flows)
+    document.getElementById('cloud-get-url').value = storage.cloudGetUrl || '';
+    document.getElementById('cloud-post-url').value = storage.cloudPostUrl || '';
+
+    document.getElementById('save-cloud-btn').addEventListener('click', async () => {
+        const getUrl = document.getElementById('cloud-get-url').value.trim();
+        const postUrl = document.getElementById('cloud-post-url').value.trim();
+        if (!getUrl || !postUrl) {
+            alert('Both GET and POST flow URLs are required.');
+            return;
+        }
+        storage.configureCloud(getUrl, postUrl);
+        try {
+            const result = await storage.testConnection();
+            if (result.ok) {
+                appData = await storage.load();
+                storage.startSync(10000);
+                renderCurrentView();
+                updateFsStatus();
+                alert('Connected to cloud flows! Data will sync every 10 seconds.');
+            } else {
+                alert('Connection test failed: ' + result.message);
+            }
+        } catch (e) {
+            alert('Error: ' + e.message);
+        }
+    });
+
+    document.getElementById('disconnect-cloud-btn').addEventListener('click', () => {
+        if (!confirm('Disconnect cloud? Data will revert to browser-only storage.')) return;
+        storage.configureCloud('', '');
+        storage.stopSync();
+        updateFsStatus();
+        alert('Disconnected from cloud. Using browser storage only.');
+    });
+
     document.getElementById('test-connection-btn').addEventListener('click', async () => {
         const result = await storage.testConnection();
         alert(result.message);
@@ -1539,18 +1575,27 @@ function initSettings() {
 function updateFsStatus() {
     const statusText = document.getElementById('fs-status-text');
     const disconnectBtn = document.getElementById('disconnect-btn');
-    if (storage.mode === 'filesystem' && storage._dirHandle) {
+    const disconnectCloudBtn = document.getElementById('disconnect-cloud-btn');
+    if (storage.mode === 'cloud') {
+        statusText.textContent = `Cloud mode: syncing via Power Automate flows`;
+        statusText.style.color = 'green';
+        disconnectBtn.style.display = 'none';
+        if (disconnectCloudBtn) disconnectCloudBtn.style.display = '';
+    } else if (storage.mode === 'filesystem' && storage._dirHandle) {
         statusText.textContent = `Connected to folder: "${storage._dirHandle.name}" — syncing every 5 seconds`;
         statusText.style.color = 'green';
         disconnectBtn.style.display = '';
+        if (disconnectCloudBtn) disconnectCloudBtn.style.display = 'none';
     } else if (storage.mode === 'sharepoint') {
         statusText.textContent = `SharePoint mode: ${storage.spSiteUrl}`;
         statusText.style.color = 'green';
         disconnectBtn.style.display = 'none';
+        if (disconnectCloudBtn) disconnectCloudBtn.style.display = 'none';
     } else {
         statusText.textContent = 'Not connected (using browser storage only)';
         statusText.style.color = '';
         disconnectBtn.style.display = 'none';
+        if (disconnectCloudBtn) disconnectCloudBtn.style.display = 'none';
     }
 }
 

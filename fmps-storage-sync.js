@@ -12,7 +12,7 @@
 
 class StorageManager {
     constructor() {
-        this.mode = 'local'; // 'local', 'filesystem', or 'sharepoint'
+        this.mode = 'local'; // 'local', 'filesystem', 'sharepoint', or 'cloud'
         this.spSiteUrl = '';
         this.spLibrary = 'FMPSData';
         this.fileName = 'fmps-data.json';
@@ -23,6 +23,11 @@ class StorageManager {
         this._saveInProgress = false;
         this._dirHandle = null;
         this._fileLastModified = null;
+
+        // Cloud mode (Power Automate flow URLs)
+        this.cloudGetUrl = '';
+        this.cloudPostUrl = '';
+        this._cloudLastModified = null;
 
         this._loadConfig();
     }
@@ -37,8 +42,13 @@ class StorageManager {
             const cfg = JSON.parse(saved);
             this.spSiteUrl = cfg.spSiteUrl || '';
             this.spLibrary = cfg.spLibrary || 'FMPSData';
+            this.cloudGetUrl = cfg.cloudGetUrl || '';
+            this.cloudPostUrl = cfg.cloudPostUrl || '';
             this.mode = cfg.mode || 'local';
             if (this.mode === 'sharepoint' && !this.spSiteUrl) {
+                this.mode = 'local';
+            }
+            if (this.mode === 'cloud' && !this.cloudGetUrl) {
                 this.mode = 'local';
             }
         }
@@ -48,6 +58,8 @@ class StorageManager {
         localStorage.setItem('fmps_storage_config', JSON.stringify({
             spSiteUrl: this.spSiteUrl,
             spLibrary: this.spLibrary,
+            cloudGetUrl: this.cloudGetUrl,
+            cloudPostUrl: this.cloudPostUrl,
             mode: this.mode,
         }));
     }
@@ -64,6 +76,9 @@ class StorageManager {
     // ============================
 
     async load() {
+        if (this.mode === 'cloud') {
+            return this._cloudLoad();
+        }
         if (this.mode === 'filesystem') {
             return this._fsLoad();
         }
@@ -82,7 +97,9 @@ class StorageManager {
         try {
             data.lastModified = new Date().toISOString();
             this.data = data;
-            if (this.mode === 'filesystem') {
+            if (this.mode === 'cloud') {
+                await this._cloudSave(data);
+            } else if (this.mode === 'filesystem') {
                 await this._fsSave(data);
             } else if (this.mode === 'sharepoint') {
                 await this._spSave(data);
@@ -298,7 +315,9 @@ class StorageManager {
     startSync(intervalMs = 5000) {
         this.stopSync();
         this.syncInterval = setInterval(() => {
-            if (this.mode === 'filesystem') {
+            if (this.mode === 'cloud') {
+                this._cloudSyncPoll();
+            } else if (this.mode === 'filesystem') {
                 this._fsSyncPoll();
             } else if (this.mode === 'sharepoint') {
                 this._spSyncPoll();
@@ -314,6 +333,16 @@ class StorageManager {
     }
 
     async testConnection() {
+        if (this.mode === 'cloud') {
+            if (!this.cloudGetUrl) return { ok: false, message: 'No GET flow URL configured' };
+            try {
+                const resp = await fetch(this.cloudGetUrl);
+                if (resp.ok) return { ok: true, message: 'Cloud flow connected successfully' };
+                return { ok: false, message: `Flow returned status ${resp.status}` };
+            } catch (e) {
+                return { ok: false, message: `Flow connection failed: ${e.message}` };
+            }
+        }
         if (this.mode === 'filesystem') {
             if (!this._dirHandle) return { ok: false, message: 'No folder connected' };
             try {
@@ -351,6 +380,77 @@ class StorageManager {
             tx.objectStore('handles').delete('dataFolder');
             await this._idbTx(tx);
         } catch { /* ignore */ }
+    }
+
+    // ============================
+    // Cloud Mode (Power Automate Flows)
+    // ============================
+
+    configureCloud(getUrl, postUrl) {
+        this.cloudGetUrl = getUrl;
+        this.cloudPostUrl = postUrl;
+        this.mode = (getUrl && postUrl) ? 'cloud' : 'local';
+        this._saveConfig();
+    }
+
+    async _cloudLoad() {
+        if (!this.cloudGetUrl) return this._localLoad();
+        try {
+            const resp = await fetch(this.cloudGetUrl);
+            if (!resp.ok) {
+                console.warn('Cloud load failed, using local cache:', resp.status);
+                return this._localLoad();
+            }
+            const text = await resp.text();
+            this.data = JSON.parse(text);
+            this._cloudLastModified = this.data.lastModified;
+            this._localSave(this.data);
+            return this.data;
+        } catch (e) {
+            console.warn('Cloud load error, using local cache:', e.message);
+            return this._localLoad();
+        }
+    }
+
+    async _cloudSave(data) {
+        if (!this.cloudPostUrl) {
+            this._localSave(data);
+            return;
+        }
+        try {
+            const resp = await fetch(this.cloudPostUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+            if (!resp.ok) throw new Error(`Cloud save returned ${resp.status}`);
+            this._cloudLastModified = data.lastModified;
+            this._localSave(data);
+        } catch (e) {
+            console.error('Cloud save failed:', e);
+            this._localSave(data);
+            throw new Error(`Cloud save failed: ${e.message}. Data cached locally.`);
+        }
+    }
+
+    async _cloudSyncPoll() {
+        if (!this.cloudGetUrl) return;
+        try {
+            const resp = await fetch(this.cloudGetUrl);
+            if (!resp.ok) return;
+            const text = await resp.text();
+            const newData = JSON.parse(text);
+            if (newData.lastModified && newData.lastModified !== this._cloudLastModified) {
+                this._cloudLastModified = newData.lastModified;
+                this.data = newData;
+                this._localSave(newData);
+                if (this.onDataChange) {
+                    this.onDataChange(newData);
+                }
+            }
+        } catch {
+            // Silent fail on poll
+        }
     }
 
     // ============================

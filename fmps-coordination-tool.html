@@ -391,6 +391,18 @@
                             <button class="neo-btn" id="test-connection-btn">Test</button>
                             <button class="neo-btn neo-btn-danger" id="disconnect-btn" style="display:none;">Disconnect</button>
                         </div>
+                        <details style="margin-top:12px;" id="cloud-flow-details">
+                            <summary style="cursor:pointer;font-size:0.8rem;color:var(--primary-blue);">Cloud Mode: Power Automate Flow URLs</summary>
+                            <p class="card-desc" style="margin-top:8px;">Paste your flow URLs below. All users sharing these URLs will read/write to the same data file.</p>
+                            <label class="neo-label">GET Data Flow URL</label>
+                            <input type="url" id="cloud-get-url" class="neo-input neo-input-full" placeholder="https://prod-XX.westus.logic.azure.com/workflows/...">
+                            <label class="neo-label">POST Data Flow URL</label>
+                            <input type="url" id="cloud-post-url" class="neo-input neo-input-full" placeholder="https://prod-XX.westus.logic.azure.com/workflows/...">
+                            <div class="btn-row" style="margin-top:8px;">
+                                <button class="neo-btn neo-btn-primary" id="save-cloud-btn">Save & Connect Cloud</button>
+                                <button class="neo-btn neo-btn-danger" id="disconnect-cloud-btn" style="display:none;">Disconnect Cloud</button>
+                            </div>
+                        </details>
                         <details style="margin-top:12px;">
                             <summary style="cursor:pointer;font-size:0.8rem;color:var(--primary-blue);">Advanced: SharePoint REST (same-origin only)</summary>
                             <label class="neo-label" style="margin-top:8px;">SharePoint Site URL</label>
