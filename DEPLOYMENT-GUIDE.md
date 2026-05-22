@@ -1,51 +1,61 @@
-# FMPS Coordination Tool — Deployment Guide
+# Method of Procedure: Zero-Setup Web App Deployment
 
-## Zero-Setup Hosting with GitHub Pages + Power Automate + SharePoint
+## GitHub Pages + Power Automate + SharePoint
 
-This guide explains how to deploy a browser-based tool so that:
+**Scope:** Any browser-based tool (HTML/JS/CSS) that needs shared data storage across a team without requiring admin permissions, servers, or client-side installs.
 
-- **Your team clicks one link** — no installs, no downloads, no folder sync
-- **All data saves to YOUR SharePoint folder** — you're the host
-- **Changes sync across all users in real time**
-- **No admin permissions required**
+**Audience:** Developers, team leads, and power users deploying internal web tools within a Microsoft 365 organization.
 
 ---
 
-## Architecture Overview
+## Use Cases
+
+This pattern works for any project where you need:
+
+- A lightweight internal web app accessible via a single link
+- Shared data that multiple users can read/write
+- No IT tickets, no admin approvals, no infrastructure
+- Version-controlled code with automatic deployments
+
+**Examples:** project trackers, inventory tools, scheduling apps, dashboards, calculators, form builders, status boards, knowledge bases.
+
+---
+
+## How It Works
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  Team Member's Browser                                       │
-│  (opens GitHub Pages URL)                                    │
+│  User's Browser                                              │
+│  (opens your GitHub Pages URL — one click, zero setup)       │
 │                                                              │
 │  ┌─────────────────────────────────────────────────────┐    │
-│  │  Your App (HTML + JS + CSS)                          │    │
-│  │  Hosted on GitHub Pages (free, auto-deploys)         │    │
+│  │  Your App (static HTML + JS + CSS)                   │    │
+│  │  Served from GitHub Pages (free, auto-deploys)       │    │
 │  └──────────────┬──────────────────────┬───────────────┘    │
 └─────────────────┼──────────────────────┼────────────────────┘
                   │ GET data             │ POST data
                   ▼                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Power Automate (your M365 license)                          │
+│  Power Automate (included in M365 license)                   │
 │                                                              │
-│  Flow 1: "Get Data"    Flow 2: "Save Data"                  │
-│  HTTP trigger →        HTTP trigger →                        │
-│  Read file from SP →   Write file to SP →                   │
-│  Return JSON           Return 200 OK                         │
+│  Flow 1: "Read"         Flow 2: "Write"                     │
+│  HTTP GET trigger →     HTTP POST trigger →                  │
+│  Read file from SP →    Write file to SP →                  │
+│  Return JSON            Return 200 OK                        │
 └─────────────────┬──────────────────────┬────────────────────┘
                   │                      │
                   ▼                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  YOUR SharePoint Folder                                      │
-│  (e.g., /sites/YourSite/FMPSData/fmps-data.json)           │
+│  SharePoint Document Library                                 │
+│  (your-data-file.json)                                       │
 │                                                              │
-│  You own it. You control permissions. One source of truth.   │
+│  You own it. You control access. Single source of truth.     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## What You Need
+## Prerequisites
 
 | Component | Purpose | Cost |
 |-----------|---------|------|
@@ -248,10 +258,10 @@ git push
 
 ## How It Works for Your Team
 
-| Who | What they do | What they need |
-|-----|--------------|----------------|
-| **You (admin)** | Set up repo, flows, SharePoint folder | GitHub account + M365 |
-| **Team members** | Click the link and use the tool | A web browser. That's it. |
+| Role | Action | Requirements |
+|------|--------|--------------|
+| **App Owner** | Set up repo, create flows, configure SharePoint library | GitHub account + M365 license |
+| **End Users** | Click the link and use the app | A web browser. That's it. |
 
 ---
 
@@ -259,70 +269,120 @@ git push
 
 | Concern | Mitigation |
 |---------|------------|
-| Flow URLs are "public" | They contain a long cryptographic signature (SAS token). Treat them like passwords — don't post them publicly. Store them in a config file or env variable. |
-| Who can call the flows? | Anyone with the URL. For internal tools, this is acceptable. For sensitive data, add a check in the flow (e.g., verify the caller's IP or add a custom header/token). |
-| Data in SharePoint | Standard SharePoint permissions apply. Only users with access to the library can see the data in SharePoint directly. |
-| GitHub repo is public | Only your HTML/JS/CSS code is public. Your DATA stays in SharePoint. Don't put flow URLs in the public repo — load them from a config endpoint or prompt the user. |
+| Flow URLs are "public" | They contain a long cryptographic SAS token. Treat them like API keys — never commit them to a public repo. |
+| Who can call the flows? | Anyone with the URL. Acceptable for internal tools. For sensitive data, add validation in the flow (custom header, IP check, or M365 group membership check). |
+| Data in SharePoint | Standard SharePoint permissions apply. Only users with library access can view files directly. |
+| Public GitHub repo | Only code is public — data stays in SharePoint. Keep flow URLs out of the repo (see below). |
 
-### Protecting Flow URLs in a Public Repo
+### Protecting Flow URLs
 
-**Option A:** Store URLs in localStorage (user enters them once in Settings):
+| Method | Complexity | Best For |
+|--------|-----------|----------|
+| **Settings prompt** — user pastes URLs once, stored in browser localStorage | Low | Small teams where you share URLs via Teams/email |
+| **Config flow** — a third flow that validates a shared passphrase and returns the real URLs | Medium | Larger teams, extra security layer |
+| **Private repo** — GitHub Pro/Team/Enterprise allows Pages on private repos | Low | Orgs with GitHub Enterprise |
+| **Environment config file** — `.env` or `config.js` excluded from repo via `.gitignore` | Low | Local/hybrid deployments |
+
+Example (Settings prompt approach):
 ```javascript
-// Don't hardcode — prompt user or load from config
-const flowUrls = JSON.parse(localStorage.getItem('flow_config') || '{}');
+// On first load, prompt user for flow URLs (shared via secure channel)
+let config = JSON.parse(localStorage.getItem('app_flow_config') || 'null');
+if (!config) {
+    config = {
+        getUrl: prompt('Paste the GET flow URL:'),
+        saveUrl: prompt('Paste the SAVE flow URL:'),
+    };
+    localStorage.setItem('app_flow_config', JSON.stringify(config));
+}
 ```
-
-**Option B:** Create a tiny "config" flow that returns the actual URLs after verifying the caller:
-```
-App loads → calls config flow with a shared secret → gets back the real flow URLs
-```
-
-**Option C:** Make the GitHub repo private (requires GitHub Pro/Team for Pages on private repos).
 
 ---
 
-## Updating the App
+## Ongoing Maintenance
 
+### Updating the App Code
 ```bash
-# Make your code changes locally, then:
+# Edit files locally, then:
 git add -A
 git commit -m "Description of changes"
 git push
 # GitHub Pages auto-deploys in ~60 seconds
-# All users see the update on their next page refresh
+# All users see updates on next page refresh — no action required from them
 ```
+
+### Updating Data Schema
+If you add new fields to your data model:
+1. Update the app code to handle missing fields gracefully (defaults/fallbacks)
+2. Push to GitHub
+3. Existing data files continue to work — no migration needed
+
+### Flow Maintenance
+- Power Automate connections expire periodically — re-authorize if flows start failing
+- Monitor flow run history at [make.powerautomate.com](https://make.powerautomate.com) → My Flows → Run History
 
 ---
 
 ## Troubleshooting
 
-| Issue | Fix |
-|-------|-----|
-| "Failed to fetch" errors | Check that your flow URLs are correct. Test them in a browser (GET flow) or Postman (POST flow). |
-| Data not loading | Make sure `fmps-data.json` exists in your SharePoint library. Create it manually with `{}` if needed. |
-| Flow returning 401/403 | The flow's SharePoint connection may have expired. Open the flow in Power Automate and re-authorize the SharePoint connector. |
-| Stale data | Add a timestamp check or reduce the sync poll interval. |
-| CORS errors | Power Automate HTTP triggers allow cross-origin by default. If you see CORS errors, the URL may be wrong. |
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| "Failed to fetch" | Flow URL incorrect or expired | Verify URL in browser (GET) or Postman (POST) |
+| Data not loading | Data file doesn't exist in SharePoint | Create it manually with `{}` content |
+| Flow returns 401/403 | SharePoint connector auth expired | Open flow → re-authorize the SharePoint connection |
+| Stale data across users | Poll interval too long | Reduce sync interval or add a "Refresh" button |
+| CORS errors | URL is wrong (not a Power Automate URL) | Power Automate HTTP triggers allow CORS by default |
+| GitHub Pages 404 | Branch/path misconfigured | Check Settings → Pages → ensure correct branch and path |
+| Changes not deploying | GitHub Actions build failed | Check repo → Actions tab for errors |
 
 ---
 
-## Replicating This Pattern for Other Tools
+## Scaling This Pattern
 
-This pattern works for **any** browser-based tool:
+### Multiple Data Files
+For apps with separate data collections, create additional flows or parameterize:
+```
+GET /data?file=events.json
+GET /data?file=users.json
+```
+In the flow, use a query parameter to determine which file to read.
 
-1. **Frontend:** Static HTML/JS/CSS → GitHub Pages (free hosting, version controlled)
-2. **Backend:** Power Automate flows → read/write SharePoint files (no server needed)
-3. **Data:** SharePoint document library → enterprise-grade storage with permissions
+### Multiple Environments
+| Environment | GitHub Branch | Flow Set | SharePoint Library |
+|-------------|---------------|----------|-------------------|
+| Production | `main` | Prod flows | `/AppData/` |
+| Development | `dev` | Dev flows | `/AppData-Dev/` |
 
-### Steps to replicate:
-1. Build your tool as static HTML/JS
-2. Create a GitHub repo, enable Pages
-3. Create a SharePoint library for data
-4. Create 2 Power Automate flows (GET + POST)
-5. Wire the flow URLs into your app
-6. Share the link
+### Access Control
+Add user validation in your Save flow:
+1. Add an "Initialize variable" step: `AllowedEmails = ["user1@company.com", "user2@company.com"]`
+2. Add a "Condition": Check if the request header `X-User-Email` is in the list
+3. If no → Response 403
+4. If yes → proceed with save
 
-**Total cost: $0 beyond existing M365 licensing.**
+### Concurrent Edits (Conflict Resolution)
+For tools where multiple users may save simultaneously:
+1. Include a `lastModified` timestamp in your data
+2. Before saving, read current file and compare timestamps
+3. If the file was modified since last read → return 409 Conflict
+4. App handles conflict by reloading and notifying user
+
+---
+
+## Checklist: New Project Deployment
+
+Use this checklist when deploying a new tool using this pattern:
+
+- [ ] **Code ready** — app works locally with localStorage
+- [ ] **GitHub repo created** — public or private with Pages support
+- [ ] **GitHub Pages enabled** — site is live at `*.github.io` URL
+- [ ] **SharePoint library created** — folder exists for data file
+- [ ] **Seed data file created** — initial `data.json` uploaded to library (can be `{}`)
+- [ ] **GET flow created** — tested in browser, returns JSON
+- [ ] **SAVE flow created** — tested via Postman/curl, writes to SharePoint
+- [ ] **Flow URLs configured** — stored securely, not in public repo
+- [ ] **App tested end-to-end** — load data, modify, save, reload confirms persistence
+- [ ] **Shared with team** — link sent via Teams/email
+- [ ] **Documentation** — brief README for your team explaining the tool
 
 ---
 
@@ -330,12 +390,27 @@ This pattern works for **any** browser-based tool:
 
 | Resource | URL |
 |----------|-----|
-| Your app | `https://YOUR-USERNAME.github.io/your-tool-name/` |
-| GitHub repo | `https://github.com/YOUR-USERNAME/your-tool-name` |
-| SharePoint data | `https://yourcompany.sharepoint.com/sites/YourSite/AppData/` |
-| Power Automate | [make.powerautomate.com](https://make.powerautomate.com) |
 | GitHub Pages docs | [pages.github.com](https://pages.github.com) |
+| Power Automate | [make.powerautomate.com](https://make.powerautomate.com) |
+| SharePoint admin | `https://YOURCOMPANY-admin.sharepoint.com` |
+| Flow HTTP trigger docs | [Microsoft Learn](https://learn.microsoft.com/en-us/power-automate/triggers-introduction#request-triggers) |
 
 ---
 
-*Created for Panduit FMPS Team — adaptable to any M365 organization.*
+## Summary
+
+| Layer | Technology | Role |
+|-------|-----------|------|
+| **Hosting** | GitHub Pages | Serves static app files (HTML/JS/CSS) |
+| **API** | Power Automate | Reads/writes data without a server |
+| **Storage** | SharePoint | Enterprise file storage with permissions |
+| **Auth** | SAS token in flow URL | Secures API access without Azure AD |
+| **Sync** | OneDrive (optional) | Real-time sync for local folder mode |
+
+**Total infrastructure cost: $0** (uses existing M365 + free GitHub tier)
+
+**Time to deploy a new project: ~30 minutes** (once you've done it once)
+
+---
+
+*This MOP is technology-agnostic for the frontend — works with any static HTML/JS/CSS application regardless of framework or complexity.*
