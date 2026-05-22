@@ -8,12 +8,12 @@ A lightweight, browser-based coordination tool that replaces the shared Excel wo
 ┌──────────────────────────────────────────────┐
 │  SharePoint Document Library ("FMPSData")    │
 │                                              │
-│  📄 index.html   ← The app (open this)      │
-│  📄 style.css    ← Styling                  │
-│  📄 data.js      ← Default config           │
-│  📄 storage.js   ← Sync engine              │
-│  📄 app.js       ← Application logic        │
-│  📄 fmps-data.json  ← Shared data (auto)    │
+│  📄 fmps-coordination-tool.html  ← The app (open this)      │
+│  📄 fmps-tool-styles.css         ← Styling                   │
+│  📄 fmps-config-defaults.js      ← Default config            │
+│  📄 fmps-storage-sync.js         ← Sync engine               │
+│  📄 fmps-app-main.js             ← Application logic         │
+│  📄 fmps-data.json               ← Shared data (auto)        │
 │                                              │
 └──────────────────────────────────────────────┘
          ↕ Everyone reads the same link
@@ -34,22 +34,22 @@ A lightweight, browser-based coordination tool that replaces the shared Excel wo
 
 ### Step 2: Upload the App Files
 Upload these files to the `FMPSData` library:
-- `index.html`
-- `style.css`
-- `data.js`
-- `storage.js`
-- `app.js`
+- `fmps-coordination-tool.html`
+- `fmps-tool-styles.css`
+- `fmps-config-defaults.js`
+- `fmps-storage-sync.js`
+- `fmps-app-main.js`
 
 ### Step 3: Configure the App
-1. Open `index.html` from the library (it will open in browser)
+1. Open `fmps-coordination-tool.html` from the library (it will open in browser)
 2. Go to **⚙️ Settings** tab
 3. Enter your SharePoint site URL and library name
 4. Click **Save & Connect**
 
 ### Step 4: Share the Link
-Copy the URL to `index.html` and share it with your team. That's it!
+Copy the URL to `fmps-coordination-tool.html` and share it with your team. That's it!
 
-> **Alternative**: If SharePoint blocks running HTML directly, create a SharePoint page and add a **File Viewer** or **Embed** web part pointing to the `index.html` file.
+> **Alternative**: If SharePoint blocks running HTML directly, create a SharePoint page and add a **File Viewer** or **Embed** web part pointing to the `fmps-coordination-tool.html` file.
 
 ---
 
@@ -69,7 +69,7 @@ Copy the URL to `index.html` and share it with your team. That's it!
 
 ## Local Development / Testing
 
-Just open `index.html` in a browser. Without a SharePoint connection, data saves to `localStorage` (single-user only). Configure a SharePoint site in Settings to enable multi-user sync.
+Just open `fmps-coordination-tool.html` in a browser. Without a SharePoint connection, data saves to `localStorage` (single-user only). Configure a SharePoint site in Settings to enable multi-user sync.
 
 ---
 

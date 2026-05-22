@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMPS Coordination Tool | Panduit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="fmps-tool-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-left">
+            <svg class="panduit-logo" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="8" width="8" height="8" rx="1" fill="#FFFFFF"/>
+                <rect x="10" y="4" width="8" height="16" rx="1" fill="#FFFFFF" opacity="0.8"/>
+                <rect x="20" y="6" width="8" height="12" rx="1" fill="#FFFFFF" opacity="0.6"/>
+            </svg>
+            <h1>FMPS Coordination</h1>
+        </div>
+        <div class="header-center">
+            <div class="global-search">
+                <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/><path d="M13 13L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <input type="search" id="global-search" placeholder="Search events, people, assets..." autocomplete="off">
+            </div>
+        </div>
+        <div class="header-right">
+            <span id="sync-status" class="sync-badge synced">
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg>
+                <span>Synced</span>
+            </span>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <button class="nav-btn active" data-view="dashboard" title="Dashboard">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Dashboard</span>
+            </button>
+            <button class="nav-btn" data-view="calendar" title="Calendar">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18" stroke="currentColor" stroke-width="2"/><path d="M8 2v4M16 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Calendar</span>
+            </button>
+            <button class="nav-btn" data-view="events" title="Events">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="2"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M9 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Events</span>
+            </button>
+            <button class="nav-btn" data-view="map" title="Map">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Map</span>
+            </button>
+            <button class="nav-btn" data-view="assets" title="Assets">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4M4 7l8 4M4 7v10l8 4m0-10v10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <span>Assets</span>
+            </button>
+            <button class="nav-btn" data-view="travel" title="Team Travel">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="2"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="7" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M17 11.5a3 3 0 013 3V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Travel</span>
+            </button>
+            <button class="nav-btn" data-view="thought-leadership" title="Speaking">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v10M8 8l4 5 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 13a7 7 0 01-14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 20v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Speaking</span>
+            </button>
+            <div class="nav-spacer"></div>
+            <button class="nav-btn" data-view="settings" title="Settings">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2"/></svg>
+                <span>Settings</span>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Dashboard View -->
+            <section id="view-dashboard" class="view active">
+                <div class="bento-grid dashboard-grid">
+                    <!-- Stats Row -->
+                    <div class="bento-card stat-card" id="stat-events">
+                        <div class="stat-icon tradeshow">
+                            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="10" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 10V6a4 4 0 018 0v4" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="dash-total-events">0</span>
+                            <span class="stat-label">Upcoming Events</span>
+                        </div>
+                    </div>
+                    <div class="bento-card stat-card" id="stat-traveling">
+                        <div class="stat-icon travel">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M9 20H4v-2a3 3 0 015.356-1.857M12 14a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="dash-people-out">0</span>
+                            <span class="stat-label">People Traveling</span>
+                        </div>
+                    </div>
+                    <div class="bento-card stat-card" id="stat-equipment">
+                        <div class="stat-icon equipment">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4M4 7l8 4M4 7v10l8 4m0-10v10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="dash-equipment-out">0</span>
+                            <span class="stat-label">Equipment Reserved</span>
+                        </div>
+                    </div>
+                    <div class="bento-card stat-card" id="stat-confirmed">
+                        <div class="stat-icon confirmed">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="dash-confirmed">0</span>
+                            <span class="stat-label">Confirmed</span>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events -->
+                    <div class="bento-card bento-tall" id="upcoming-events-card">
+                        <div class="card-header">
+                            <h3>Upcoming Events</h3>
+                            <button class="neo-btn-sm" onclick="navigateTo('events')">View All ›</button>
+                        </div>
+                        <div class="upcoming-events-list" id="dash-upcoming-list"></div>
+                    </div>
+
+                    <!-- Weekly Availability -->
+                    <div class="bento-card bento-wide" id="weekly-availability-card">
+                        <div class="card-header">
+                            <h3>Weekly Availability</h3>
+                            <div class="week-nav">
+                                <button class="neo-btn-sm" id="week-prev">‹</button>
+                                <span id="week-label"></span>
+                                <button class="neo-btn-sm" id="week-next">›</button>
+                            </div>
+                        </div>
+                        <div id="weekly-availability-grid" class="weekly-grid"></div>
+                    </div>
+
+                    <!-- Mini Map -->
+                    <div class="bento-card bento-wide" id="dash-map-card">
+                        <div class="card-header">
+                            <h3>Event Locations</h3>
+                            <button class="neo-btn-sm" onclick="navigateTo('map')">Expand ›</button>
+                        </div>
+                        <div id="dash-map" class="mini-map"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar View -->
+            <section id="view-calendar" class="view">
+                <div class="view-header">
+                    <h2>Event Calendar</h2>
+                    <div class="calendar-nav">
+                        <button id="prev-month" class="neo-btn-icon">
+                            <svg viewBox="0 0 20 20" fill="none"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <span id="current-month-label" class="month-label"></span>
+                        <button id="next-month" class="neo-btn-icon">
+                            <svg viewBox="0 0 20 20" fill="none"><path d="M8 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <select id="year-select" class="neo-select"></select>
+                    </div>
+                </div>
+                <div class="calendar-filters">
+                    <div class="filter-chips" id="cal-filter-chips">
+                        <button class="chip active" data-filter="all">All</button>
+                        <button class="chip" data-filter="tradeshow">
+                            <svg class="chip-icon" viewBox="0 0 16 16"><rect x="2" y="6" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M5 6V4a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                            Tradeshows
+                        </button>
+                        <button class="chip" data-filter="training">
+                            <svg class="chip-icon" viewBox="0 0 16 16"><path d="M8 2l6 3-6 3-6-3 6-3z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M14 7v4M4 6.5v4a4 4 0 008 0v-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                            Training
+                        </button>
+                        <button class="chip" data-filter="speaking">
+                            <svg class="chip-icon" viewBox="0 0 16 16"><path d="M8 2v6M6 5l2 3 2-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M12 9a4 4 0 01-8 0" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8 13v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+                            Speaking
+                        </button>
+                        <button class="chip" data-filter="sales">
+                            <svg class="chip-icon" viewBox="0 0 16 16"><path d="M3 11l3-3 2 2 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M10 5h3v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                            Sales
+                        </button>
+                        <button class="chip" data-filter="exhibit">
+                            <svg class="chip-icon" viewBox="0 0 16 16"><rect x="3" y="4" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M6 4V2h4v2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M3 8h10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                            Exhibits
+                        </button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendar-grid"></div>
+            </section>
+
+            <!-- Events View -->
+            <section id="view-events" class="view">
+                <div class="view-header">
+                    <h2>Events</h2>
+                    <span id="events-count" class="results-count"></span>
+                    <button class="neo-btn neo-btn-secondary" onclick="exportAllEventsICS()">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M15 3H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2zM6 1v4M14 1v4M3 9h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        Export All (.ics)
+                    </button>
+                    <button class="neo-btn neo-btn-primary" id="add-event-btn">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        New Event
+                    </button>
+                </div>
+                <div class="filters-bar">
+                    <div class="neo-search-wrap">
+                        <svg viewBox="0 0 20 20" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/><path d="M13 13L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        <input type="search" id="event-search" placeholder="Search events or team..." class="neo-input">
+                    </div>
+                    <select id="filter-timeframe" class="neo-select">
+                        <option value="upcoming">Current & Upcoming</option>
+                        <option value="all">All Events</option>
+                        <option value="past">Past / Archived</option>
+                        <option value="this-year">This Year</option>
+                    </select>
+                    <select id="filter-status" class="neo-select">
+                        <option value="">All Statuses</option>
+                        <option value="Confirmed">Confirmed</option>
+                        <option value="Placeholder">Placeholder</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Done">Done</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                    <select id="filter-type" class="neo-select">
+                        <option value="">All Types</option>
+                    </select>
+                    <select id="filter-region" class="neo-select">
+                        <option value="">All Regions</option>
+                        <option value="NA">NA</option>
+                        <option value="LATAM">LATAM</option>
+                        <option value="EMEA">EMEA</option>
+                        <option value="APAC">APAC</option>
+                    </select>
+                </div>
+                <div class="table-wrap neo-table-wrap">
+                    <table class="data-table" id="events-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Event Name</th>
+                                <th>Region</th>
+                                <th>Team</th>
+                                <th>Dates</th>
+                                <th>Display</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="events-tbody"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Map View -->
+            <section id="view-map" class="view">
+                <div class="view-header">
+                    <h2>Event Map</h2>
+                    <div class="map-filters">
+                        <select id="map-filter-status" class="neo-select">
+                            <option value="">All Statuses</option>
+                            <option value="Confirmed">Confirmed</option>
+                            <option value="Pending">Pending</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="event-map" class="full-map"></div>
+                <div class="map-legend">
+                    <span class="legend-item"><span class="legend-dot tradeshow"></span> Tradeshow</span>
+                    <span class="legend-item"><span class="legend-dot training"></span> Training</span>
+                    <span class="legend-item"><span class="legend-dot speaking"></span> Speaking</span>
+                    <span class="legend-item"><span class="legend-dot sales"></span> Sales</span>
+                    <span class="legend-item"><span class="legend-dot exhibit"></span> Exhibit</span>
+                </div>
+            </section>
+
+            <!-- Assets View -->
+            <section id="view-assets" class="view">
+                <div class="view-header">
+                    <h2>Assets & Reservations</h2>
+                    <button class="neo-btn neo-btn-primary" id="register-show-btn">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        Register Show
+                    </button>
+                    <button class="neo-btn" id="add-asset-btn">
+                        Add Asset
+                    </button>
+                </div>
+                <div class="table-wrap neo-table-wrap">
+                    <table class="data-table" id="assets-table">
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Category</th>
+                                <th>Total</th>
+                                <th>Reserved</th>
+                                <th>Available</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="assets-tbody"></tbody>
+                    </table>
+                </div>
+                <h3 class="section-subtitle">Current Reservations</h3>
+                <div class="table-wrap neo-table-wrap">
+                    <table class="data-table" id="reservations-table">
+                        <thead>
+                            <tr>
+                                <th>Asset</th>
+                                <th>Event</th>
+                                <th>Qty</th>
+                                <th>Dates</th>
+                                <th>Reserved By</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reservations-tbody"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Team Travel View -->
+            <section id="view-travel" class="view">
+                <div class="view-header">
+                    <h2>Team Travel</h2>
+                    <div class="travel-filters">
+                        <select id="travel-period" class="neo-select">
+                            <option value="month">This Month</option>
+                            <option value="quarter">This Quarter</option>
+                            <option value="year">This Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bento-card bento-full" id="travel-chart-card">
+                    <div class="card-header">
+                        <h3>Travel Days by Team Member</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chart-travel"></canvas>
+                    </div>
+                </div>
+                <div class="team-grid" id="team-grid"></div>
+            </section>
+
+            <!-- Thought Leadership View -->
+            <section id="view-thought-leadership" class="view">
+                <div class="view-header">
+                    <h2>Thought Leadership & Speaking</h2>
+                    <button class="neo-btn neo-btn-primary" id="add-tl-btn">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        New Submission
+                    </button>
+                </div>
+                <div class="table-wrap neo-table-wrap">
+                    <table class="data-table" id="tl-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Title</th>
+                                <th>Speaker(s)</th>
+                                <th>Deadline</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tl-tbody"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Settings View -->
+            <section id="view-settings" class="view">
+                <div class="view-header">
+                    <h2>Settings</h2>
+                </div>
+                <div class="settings-grid">
+                    <div class="bento-card">
+                        <div class="card-header"><h3>Data Connection</h3></div>
+                        <p class="card-desc">Configure SharePoint sync for multi-user collaboration.</p>
+                        <label class="neo-label">SharePoint Site URL</label>
+                        <input type="url" id="sp-site-url" class="neo-input neo-input-full" placeholder="https://panduit.sharepoint.com/sites/YourSite">
+                        <label class="neo-label">Document Library Name</label>
+                        <input type="text" id="sp-library-name" class="neo-input neo-input-full" value="FMPSData" placeholder="FMPSData">
+                        <div class="btn-row">
+                            <button class="neo-btn neo-btn-primary" id="save-config-btn">Save & Connect</button>
+                            <button class="neo-btn" id="test-connection-btn">Test</button>
+                        </div>
+                    </div>
+                    <div class="bento-card">
+                        <div class="card-header"><h3>Manage Options</h3></div>
+                        <p class="card-desc">Edit event types, team members, and picklists.</p>
+                        <label class="neo-label">Category</label>
+                        <select id="config-category" class="neo-select neo-input-full">
+                            <option value="eventTypes">Event Types</option>
+                            <option value="teamMembers">Team Members</option>
+                            <option value="boothSizes">Booth Sizes</option>
+                            <option value="displayTypes">Display Types</option>
+                            <option value="regions">Regions</option>
+                        </select>
+                        <div id="config-list" class="config-list"></div>
+                        <div class="config-add">
+                            <input type="text" id="config-new-value" class="neo-input" placeholder="New value...">
+                            <button class="neo-btn neo-btn-primary" id="config-add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal neo-modal" id="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">New Event</h3>
+                <button class="neo-btn-icon modal-close" id="modal-close">
+                    <svg viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="fmps-config-defaults.js"></script>
+    <script src="fmps-seed-data.js"></script>
+    <script src="fmps-storage-sync.js"></script>
+    <script src="fmps-app-main.js"></script>
+    <script src="fmps-stress-test.js"></script>
+</body>
+</html>

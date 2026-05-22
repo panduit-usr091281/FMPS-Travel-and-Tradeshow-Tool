@@ -8,7 +8,7 @@
  *   2. Local Mode: Uses localStorage (for development/testing only).
  * 
  * SharePoint provides the sync: everyone reads/writes the same file.
- * ETag-based concurrency prevents overwrites.
+ * ETag-based optimistic concurrency prevents silent overwrites.
  */
 
 class StorageManager {
@@ -21,6 +21,7 @@ class StorageManager {
         this.data = null;
         this.syncInterval = null;
         this.onDataChange = null; // callback when data changes from sync
+        this._saveInProgress = false;
 
         this._loadConfig();
     }
@@ -63,12 +64,58 @@ class StorageManager {
     }
 
     async save(data) {
-        data.lastModified = new Date().toISOString();
-        this.data = data;
-        if (this.mode === 'sharepoint') {
-            return this._spSave(data);
+        if (this._saveInProgress) {
+            // Queue: just cache locally and let the next sync pick it up
+            this._localSave(data);
+            return;
         }
-        return this._localSave(data);
+        this._saveInProgress = true;
+        try {
+            data.lastModified = new Date().toISOString();
+            this.data = data;
+            if (this.mode === 'sharepoint') {
+                await this._spSave(data);
+            } else {
+                this._localSave(data);
+            }
+        } finally {
+            this._saveInProgress = false;
+        }
+    }
+
+    /**
+     * Migrate current in-memory/local data to a SharePoint store.
+     * Called once when user first configures a SharePoint connection.
+     * If the remote file already has data, prefer the remote version.
+     */
+    async migrateToSharePoint(localData) {
+        try {
+            const url = `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files('${this.fileName}')/$value`;
+            const resp = await fetch(url, {
+                headers: { 'Accept': 'application/json' },
+                credentials: 'include',
+            });
+
+            if (resp.status === 404) {
+                // Remote doesn't exist yet — push local data up
+                await this._spSave(localData);
+                return localData;
+            }
+
+            if (resp.ok) {
+                // Remote exists — use remote as source of truth
+                this.etag = resp.headers.get('ETag');
+                const text = await resp.text();
+                this.data = JSON.parse(text);
+                this._lastKnownModified = this.data.lastModified || new Date().toISOString();
+                this._localSave(this.data);
+                return this.data;
+            }
+
+            throw new Error(`SP migration check failed: ${resp.status}`);
+        } catch (e) {
+            throw new Error(`Migration failed: ${e.message}`);
+        }
     }
 
     startSync(intervalMs = 15000) {
@@ -128,58 +175,70 @@ class StorageManager {
     }
 
     async _spLoad() {
-        try {
-            const url = `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files('${this.fileName}')/$value`;
-            const resp = await fetch(url, {
-                headers: { 'Accept': 'application/json' },
-                credentials: 'include',
-            });
+        const url = `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files('${this.fileName}')/$value`;
+        const resp = await fetch(url, {
+            headers: { 'Accept': 'application/json' },
+            credentials: 'include',
+        });
 
-            if (resp.status === 404) {
-                // File doesn't exist yet — create with seed data
-                this.data = JSON.parse(JSON.stringify(EMPTY_STATE));
-                await this._spSave(this.data);
-                return this.data;
-            }
-
-            if (!resp.ok) throw new Error(`SP load failed: ${resp.status}`);
-
-            this.etag = resp.headers.get('ETag');
-            const text = await resp.text();
-            this.data = JSON.parse(text);
+        if (resp.status === 404) {
+            // File doesn't exist yet — create with seed data
+            this.data = JSON.parse(JSON.stringify(EMPTY_STATE));
+            await this._spSave(this.data);
             return this.data;
-        } catch (e) {
-            console.warn('SharePoint load failed, falling back to local:', e);
-            this.mode = 'local';
+        }
+
+        if (!resp.ok) {
+            // Load from local cache but stay in SharePoint mode for retries
+            console.warn('SharePoint load failed, using local cache:', resp.status);
             return this._localLoad();
         }
+
+        this.etag = resp.headers.get('ETag');
+        const text = await resp.text();
+        this.data = JSON.parse(text);
+        this._lastKnownModified = this.data.lastModified || new Date().toISOString();
+        // Keep local cache up to date
+        this._localSave(this.data);
+        return this.data;
     }
 
     async _spSave(data) {
-        try {
-            const digest = await this._spGetDigest();
-            const url = `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files/Add(url='${this.fileName}',overwrite=true)`;
-            const resp = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json;odata=nometadata',
-                    'Content-Type': 'application/json',
-                    'X-RequestDigest': digest,
-                },
-                credentials: 'include',
-                body: JSON.stringify(data),
-            });
+        const digest = await this._spGetDigest();
+        const headers = {
+            'Accept': 'application/json;odata=nometadata',
+            'Content-Type': 'application/json',
+            'X-RequestDigest': digest,
+        };
 
-            if (!resp.ok) throw new Error(`SP save failed: ${resp.status}`);
-            this.etag = resp.headers.get('ETag');
-            // Also save locally as cache
-            this._localSave(data);
-        } catch (e) {
-            console.error('SharePoint save failed:', e);
-            // Save locally as fallback
-            this._localSave(data);
-            throw e;
+        // If we have an ETag, use If-Match for optimistic concurrency
+        if (this.etag) {
+            headers['If-Match'] = this.etag;
+            headers['X-HTTP-Method'] = 'PUT';
         }
+
+        const url = this.etag
+            ? `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files('${this.fileName}')/$value`
+            : `${this.spSiteUrl}/_api/web/GetFolderByServerRelativeUrl('${this.spLibrary}')/Files/Add(url='${this.fileName}',overwrite=true)`;
+
+        const resp = await fetch(url, {
+            method: 'POST',
+            headers,
+            credentials: 'include',
+            body: JSON.stringify(data),
+        });
+
+        if (resp.status === 412) {
+            // Conflict — someone else saved first. Reload remote and throw so UI can handle.
+            await this._spLoad();
+            throw new Error('CONFLICT: Another user saved changes. Your view has been refreshed. Please re-apply your changes.');
+        }
+
+        if (!resp.ok) throw new Error(`SP save failed: ${resp.status}`);
+        this.etag = resp.headers.get('ETag');
+        this._lastKnownModified = data.lastModified;
+        // Also save locally as cache
+        this._localSave(data);
     }
 
     async _syncPoll() {

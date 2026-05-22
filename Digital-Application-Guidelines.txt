@@ -1,0 +1,5279 @@
+Digital Application Guidelines 
+The Panduit Digital Application Guidelines extends the Panduit 
+Brand Guidelines to ensure consistency across all digital 
+platforms, such as Panduit.com, Marketo landing pages, 
+and emails. 
+©2025 Panduit Corp. All Rights Reserved. | V2.5 
+Digital Application Guidelines 
+The Panduit Digital Application Guidelines extends the Panduit 
+Brand Guidelines to ensure consistency across all digital 
+platforms, such as Panduit.com, Marketo landing pages, 
+and emails. 
+©2025 Panduit Corp. All Rights Reserved. | V2.5 
+
+Table of Contents 
+
+SEARCH ENGINE OPTIMIZATION CHECKLIST 
+3 
+
+
+Search Engine Optimization 4 
+SEO Checklist: Content 5 
+SEO Checklist: Image Alternative Text 6 
+SEO Checklist: Page Title 7 
+SEO Checklist: H1 and Meta Description 8 
+
+DESIGN ELEMENTS 
+9 
+
+
+Color 10 
+Typography 12 
+ADA Contrast Guidelines 13 
+Text Styles 14 
+Common Background, Text & Link Color Pairings 15 
+Quotes, Statistics, and Image Reference Labels 16 
+Icons 17 
+Image Look & Feel 19 
+Telling a Story With Visual & Message Consistency 21 
+Product Hero Image 22 
+
+Image Specifications 
+23 
+
+
+Video 29 
+
+COMPONENTS 
+30 
+
+
+Banners 31 
+Banner Design Best Practices 32 
+Carousel Banner 35 
+Header Banner 37 
+Two Column Banner 38 
+
+Distributor Portal Promotional Banners 
+Banner: Image & Text Size Chart 
+Buttons 
+Call-to-Action (CTA) 
+Check Box 
+Forms: Best Practices 
+Drop-down Menu 
+Input Fields 
+Header, Footer, & Breadcrumbs 
+Hyperlinks 
+Page Layout 
+Page Layout: Column Layout & Spacing 
+Page Title and Banners 
+Radio Buttons 
+
+PAGE TEMPLATES 
+
+
+Panduit.com Page Requirements 
+Advantages of Using Page Templates 
+Home Page 
+Market Page 
+Applications (Hub/Parent) 
+Applications Sub Page 
+Product Category Page (L1) 
+Product Subcategory Page (L3) 
+Featured Product or System Page 
+Product Detail Page (SKU PDP) 
+
+MARKETO EMAIL & LANDING PAGES 
+
+
+39 Marketo Campaign 68 
+40 
+
+MARKETO EMAIL 
+69
+
+41 
+
+Email Best Practices 70 
+
+46 Effective Email Design 
+72 
+
+
+47 Email Elements of Style 73 
+
+48 Email: Product Drip Campaign 79 
+
+49 Email: Thought Leadership Content 80 
+
+Email: Event & Webinar 81 
+
+51 Email Style Example: Newsletter 82 
+
+52 Email Style Example: Solution 83 
+
+53 Thought Leadership Content Templates 84 
+
+54 Event & Webinar Templates 85 
+
+Co-Branded Templates 86 
+
+56 
+MARKETO LANDING PAGES 
+87 
+
+
+57 Marketo Landing Pages 88 
+58 Landing Page Best Practices 89 
+59 Landing Page Elements of Style 90 
+
+Landing Pages: Images 94 
+61 Gated Content Landing Page: Forms 96 
+62 Landing Pages: Webinar/Event 97 
+63 Landing Pages: Product 98 
+64 
+
+RESOURCES 
+99 
+
+
+Resources 100
+
+66 
+
+Contact Information 102 
+
+67 
+
+
+
+SEO Checklist 
+
+
+Search Engine Optimization 
+
+
+
+SEO Checklist: Content 
+
+Content Length 
+
+• 300 words for product pages 
+-150 of those 300 words 
+should be for product 
+description 
+
+• 500 words for all other pages 
+to establish authority 
+TIP: Do not copy and paste from one 
+
+page to another. It can be difficult to 
+make copy different when products are 
+
+very similar, but duplicate content can 
+be a negative mark against the 
+website’s SEO. 
+
+Keywords 
+
+• Use keyword/s twice for every 
+300 words 
+• Preference is to use the 
+keyword at least once 
+prominently near the top of 
+the page (first sentence if 
+possible) 
+
+
+Copy does not 
+have to be in one 
+block, it’s better 
+to break it into 
+smaller “bite 
+size” pieces 
+throughout the 
+page 
+
+
+
+SEO Checklist: Image Alternative Text 
+
+
+Image Alternative Text or (Alt text) 
+is a short, written description of an 
+image that usually includes a keyword. 
+The text is added to the image itself. 
+
+TIP: Image alt text does not count 
+towards the overall word count of a 
+page. 
+
+
+Good Image Alt Text: Bad Image Alt Text: 
+
+A femaile standing on a balcony with a tablet, Person in data center 
+
+overlooking a large, futuristic data center filled 
+
+with illuminated server racks and digital grid lines. 
+
+
+SEO Checklist: Page Title 
+
+Every page should have a Page Title 
+created with the main keyword in the 
+
+page title (ex. Electrical Construction 
+
+Materials | Panduit) 
+
+Page title to be less then 55 to 60 
+characters, including spaces and 
+
+the “ | Panduit” 
+
+
+TIP: A properly optimized page title 
+can increase a website’s click-throughrate 
+and help users navigate easily 
+from one tab to another. 
+
+
+Best 
+
+46 characters, clear keyword 
+focus: 
+
+Wire Routing Protection & 
+Management | Panduit 
+
+
+Not Acceptable 
+
+81 characters, competing 
+keyword focus: 
+
+Wire Routing Protection & 
+Management | Abrasion 
+Protection & Fiber Routing 
+System 
+
+
+Keywords 
+
+Title 
+
+
+
+SEO Checklist: H1 and Meta Description 
+
+The H1 is the title of your page that’s 
+physically on it, right up at the top 
+and should contain your main 
+keyword. It tells search engines and 
+web users what the page is about 
+and should accurately summarize the 
+contents of the page. Title (H1) 
+
+Meta description is a short Meta 
+description of what the page contains, 
+
+Description 
+
+appearing under the page title in the 
+search results. 
+
+Meta Description to be 150
+
+
+155 characters, including 
+
+spaces 
+
+Best: 
+
+• Can exclude “Panduit” if 
+From power & grounding connectors to 
+
+meta description is on the 
+
+electrical supplies, Panduit & Stronghold
+
+longer side 
+
+products meet the demands of the electrical 
+
+• To help increase click-construction industry. View More 
+through rates, include a (Characters:155) 
+Call-to-Action, such as “view 
+more” or “find your 
+distributor today” 
+
+• Meta description does not 
+count towards your 
+overall word count on a 
+page 
+Not Acceptable: 
+
+Panduit and Stronghold brand electrical 
+construction products include power & 
+grounding connectors, electrical supplies, 
+pre-fab components and wire management 
+solutions to meet contractor needs across all 
+electrical construction applications. 
+
+(Characters: 246) 
+
+
+Design Elements 
+
+
+Digital Colors 
+
+Digital Primary Color Digital Secondary Colors 
+
+The Panduit digital brand palette 
+
+has been updated to better meet the 
+
+specific requirements of the digital 
+
+medium and to comply with ADA 
+contrast guidelines. 
+
+Primary Color anchor the site look 
+and feel when used with secondary 
+and accent colors. The overall design/ 
+aesthetics is centered around this 
+color. 
+
+Secondary Colors are used to 
+complement the primary color and 
+enhance the overall design. 
+
+Note: A base color is a primary or 
+fundamental color that serves as the 
+starting point for creating other colors. 
+
+A shade is a variation of a color that is 
+created by adding black to the base 
+color, making it darker. Or adding 
+white, making the color lighter. 
+
+
+Primary Blue (Bright Blue)
+
+Base 
+
+#0071B2 
+
+primary-blue 
+
+Primary Usage: CTAs, hyperlinks, and 
+interactions elements 
+
+Shades 
+
+Dark Blue 
+
+#002256 
+
+dark-blue-500 
+
+Primary Usage: Backgrounds, 
+navigation, and high-contrast areas, 
+used to show areas of interest or 
+impact. 
+
+Medium Blue 
+
+#193E92 
+
+medium-blue-500 
+
+Primary Usage: Backgrounds, 
+navigation, and high-contrast areas, 
+used to show areas of interest or 
+impact. 
+
+Teal 
+#00856A 
+
+teal-500 
+
+Primary Usage: Secondary actions, 
+highlights, and minor UI accents. 
+
+
+Digital Colors 
+
+Accent Colors are to be used in 
+moderation as accents in banners, 
+
+pictographs, or as fills in larger areas 
+
+of a page to complement the Primary 
+colors. 
+
+UI Colors - These colors have specific 
+use and application as defined. 
+
+
+
+Digital Accent Colors 
+
+Base Green 
+
+#53AF3B 
+
+accent-green-500 
+
+Primary Usage: Used very sparsely 
+for UI elements or icons on Dark 
+Backgrounds. Have to ensure ADA 
+compliancy for Graphics. 
+
+Darker Green 
+
+#4FA838 
+
+accent-green-600 
+
+Primary Usage: Used very sparsely 
+for UI elements or icons on Lighter 
+Backgrounds. Have to ensure ADA 
+compliancy for Graphics. 
+
+Lime 
+
+#C3D534 
+
+accent-lime-500 
+
+Primary Usage: Used very sparsely 
+for UI elements or icons on Dark 
+Backgrounds. Have to ensure ADA 
+compliancy for Graphics. 
+
+Digital UI Colors 
+
+Pure White 
+
+#FFFFFF 
+
+neutral-white 
+
+Primary Usage: Used for text on dark 
+backgrounds and section 
+backgrounds. It is also used in some 
+cases for hyperlinks on Header & 
+Footer Bars 
+
+Mid Gray 
+
+#595959 
+
+neutral-mid-gray 
+
+Primary Usage: May be seen in 
+some dividers, outlines, and other UI 
+elements. 
+
+Heading Black 
+
+#212121 
+
+neutral-heading-black 
+
+Primary Usage: Used for Heading 
+
+Text and is slightly darker than Soft 
+
+Black, creating stronger visual 
+
+hierarchy between Heading Text and 
+
+Body copy. 
+
+Soft White 
+
+#F5F7FA 
+
+neutral-soft-white 
+
+Primary Usage: May be seen in 
+
+some backgrounds, form fields, UI 
+
+elements, possibly as secondary text 
+in Dark Backgrounds. 
+
+Strong Gray 
+
+#5A5F66 
+
+neutral-strong-gray 
+
+Primary Usage: May be seen as 
+secondary subheader text in lighter 
+backgrounds. 
+
+Yellow 
+#F4B223 
+
+alert-yellow 
+Primary Usage: Used for non-critical 
+
+warning notifications or alerts. 
+
+
+Light Gray 
+
+#D4D8DD 
+
+neutral-light-gray 
+
+Primary Usage: May be seen in 
+some dividers, outlines, and other UI 
+elements. 
+
+Soft Black 
+
+#303030 
+
+neutral-soft-black 
+
+Primary Usage: Used as the main 
+color for text and any instances where 
+
+“black” is needed. It is used instead of 
+
+True Black to reduce eye strain. 
+
+Red 
+#D0021B 
+
+alert-red 
+
+Primary Usage: Used for UI alerts, 
+error messages, and critical warnings. 
+
+
+Typography 
+
+Typography Guidelines 
+
+Make text readable and legible on different devices 
+and in different lighting conditions for all languages. 
+
+
+• Minimum Text Size: 16 pixels (or 11 points/1 
+em) is the minimum recommended text size 
+for most digital applications, as glyphs in 
+non-Latin writing systems may not be 
+readable below that size. 
+• Text Line Height: 
+-Header: 130% minimum line height for 
+header text. For example, use 21-24 pixels 
+line height for a 16 pixel typeface. 
+
+-Body Copy: 160% minimum line height for 
+body copy. 
+
+-Standalone Link/Button Text: 150% 
+minimum line height for body text. 
+
+• Characters per line: 
+-Desktop: 50 to 100 characters per line. 
+
+-Mobile: 30 to 40 characters per line. 
+
+• Multi-language consideration: Text 
+translated into other languages may take 
+up 30% more space than it does in English 
+– plan for this in the layout. 
+• Case: Use mixed case text as it is easier to 
+read. 
+Don’t use italicized text 
+
+Italic text is harder to read. 
+
+Don‘t use blue, or another color (green, yellow) for text, if the text is not a link 
+
+Using blue for non-interactive text is confusing Example of a text hyperlink which leads to an 
+external page
+
+since blue is a link color on the website. 
+
+
+Don’t underline text unless the text is a hyperlink 
+
+Within the Panduit website design language, an underline denotes a text link. If the text is a 
+hyperlink, make it a hyperlink color/style, see: hyperlinks 
+
+
+Example of a text hyperlink (hover state)
+
+This is not a link, just some text. 
+
+which leads to an external page 
+
+
+Examples of header, body copy and standalone link 
+
+Learn more about Panduit. 
+
+
+ADA Contrast Guidelines 
+
+
+Follow the Web Content Accessibility Guidelines 
+(WCAG) 2.0 for adequate contrast between text and 
+background to enhance text readability. Level AA 
+contrast is a base, minimum contrast requirement 
+whenever text is on a background – in banners, etc. 
+
+Minimum guidelines for contrast (WCAG Level 
+AA): 
+
+Normal text: 4.5:1 
+Large text (Titles, etc.): 3:1 
+
+Optimum contrast guidelines (WCAG Level AAA): 
+
+Normal text: 7:1 
+Large text (Titles, etc.): 4.5:1 
+
+
+Text Color: #FFFFFF Text Color: #FFFFFF 
+Background Color: #0071B2 Background Color: #0085D1 
+
+
+To check contrast, go to: 
+Contrast: 5.24:1 Contrast: 3.98:1 (minimum is 4.5:1)
+
+https://webaim.org/resources/contrastchecker 
+
+
+Normal text WCAG AA: PASS Normal text WCAG AA: FAIL 
+Large text WCAG AA: PASS Large text WCAG AA: PASS 
+
+
+Text Styles 
+
+Noto Sans typeface is used for all Latin based 
+languages in the styles as shown on the right. 
+
+Noto Sans Regular 
+
+Noto Sans Bold 
+
+Source Han Sans CJK Japanese is used to 
+display Japanese characters. 
+
+
+Source Han Sans Simplified Chineseis used 
+for Chinese characters. 
+
+
+Alternate Website Typefaces 
+
+Specify these alternative typefaces for the 
+browser to display in cases when the primary 
+typeface is not loading/available (in order of 
+preference.) 
+
+Arial, Helvetica Neue, sans-serif 
+
+
+Text Style (Large to Small) Weight Size Line height Default Text Color 
+Page Title (Heading1) Bold 700 40px / 2.5em 52px / 1.3em #212121 
+Section Title (Heading 2) Semi-Bold 600 30px / 1.875em 39px / 1.3em #212121 
+Sub Heading (Heading 3) Semi-Bold 600 24px / 1.5em 31px / 1.3em #212121 
+Small Title (Heading 4) Semi-Bold 600 20px / 1.25em 26px / 1.3em #212121 
+Supporting Text (Hero) Regular 400 22px / 1.375em 31px / 1.4em #212121 
+Feature Title Semi-Bold 600 20px / 1.25em 28px / 1.4em #212121 
+Body Large Regular 400 18px / 1.125em 29px / 1.6em #303030 
+Body Default Regular 400 16px/1em 26px / 1.6em #303030 
+Body small 
+Legal information only Regular 400 14px/0.875em 22px / 1.6em #303030 
+
+
+Common Background, Text & Link Color Pairings 
+
+Background Color Text Color Hyperlink Color Example 
+#FFFFFF #303030 #0071B2 The quick brown fox jumped over the fence. Read more about the fox > 
+#F5F7FA #303030 #0071B2 The quick brown fox jumped over the fence. Read more about the fox > 
+#002256 #FFFFFF #6BC8FF The quick brown fox jumped over the fence. Read more about the fox > 
+#193E92 #FFFFFF #6BC8FF The quick brown fox jumped over the fence. Read more about the fox > 
+#F0F3FB #303030 #0071B2 The quick brown fox jumped over the fence. Read more about the fox > 
+#F3FBF9 #303030 #0071B2 The quick brown fox jumped over the fence. Read more about the fox > 
+
+
+Quotes example on Renewable Energy Application page 
+
+
+Quotes, Statistics, & Image Reference Labels 
+
+Quotes and Statistics serve to capture interest and build trust. 
+
+To make quotes stand out from other text on the page, the quoted text (color 
+#223D5E) is center aligned on a light blue # F2F9FB background. 
+
+
+Reference labels Reference labels with line 
+
+
+Reference labels are used to label parts on images for 
+clarity and comprehension. 
+
+Label Background: Circle size: 38px, fill color: #00a887, 
+*Stroke: 1px outside, color #FFFFFF. 
+
+Quotes mobile
+
+Statistics percentage text is supplied as an image (320px by Text: #FFFFFF, 22px, Noto Sans Bold 
+160px), Text: Museo Sans 700, 120px, lighter blue #58769A. The 
+Line (optional): color: #00a887, 2px. In Illustrator use
+
+descriptive text is left aligned. 
+
+“Arrowhead 21” at 40% on the end of the directional line 
+
+that lands on the subject. 
+
+*Use a white stroke around the Reference Label only 
+when it overlaps an image and does not use the 
+directional line. 
+
+Statistics desktop Statistics mobile 
+
+
+
+Icons 
+
+Descriptive Icons 
+
+Descriptive Icons are used for visual storytelling and thematic 
+representation. They convey ideas, illustrate services, or explain 
+complex concepts. 
+
+Descriptive icons are mostly non interactive, often larger and 
+more detailed, providing visual support to textual content for 
+example to call attention to product features. 
+
+
+~~@J& 
+See the Icon Library (Brand Central) for more examples or to 
+get icons. 
+
+• Size: Create icons within a 96x96 pixel frame, in SVG 
+format unless otherwise specified for output (Seepage 
+content guides ). 
+• Padding: Provide 2-6 pixels of padding around the icon 
+to prevent visual clutter. 
+• Iconography Style: 
+-Simplicity: Aim for straightforward designs, limit 
+elements to those essential in portraying the 
+meaning. 
+
+-Limit rounded corners to convey meaning, not for 
+purely stylistic purposes. 
+
+-Use a line-based design with a consistent stroke of 
+approximately 5 pixels or 5 points. Use rounded cap 
+ends on lines. 
+
+-Use complete shapes (no stylistic gaps) and avoid 
+
+using solid fills. 
+
+-Maintain a flat, straight-on perspective for a clean 
+aesthetic (avoid 2-D or 3-D effects). 
+
+-Color: #303030 (dark gray) for all non-interactive 
+icons. 
+
+Application icons 
+
+Application icons serve to convey the meaning or action of 
+interactive elements on the website. 
+
+• Interactive icons typically use teal (#017698) or white 
+(#FFFFFF) colors to match hyperlink labels. On hover, 
+icons are filled with a tint of 30% of the icon color. 
+
+
+• Icons may be filled with color for better visibility at 
+smaller sizes. 
+• Provide alternative for icons. 
+• Maintain consistency in icon usage; Use the same icon 
+for the same action, see examples in Frequently Used 
+Icons. 
+• Pair icons with text labels below or to the right, 
+exceptions include Call-to-Action where the chevron 
+icon appears to the right of the corresponding 
+hyperlink. 
+• Ensure vertical alignment of text and icon: 
+
+Frequently Used Application Icons 
+
+Icon Description Icon Position/Label Example 
+PDF File Icon left of label Document Title 
+Video - Clicking this link would play a video, or link to a video Icon left of label 
+Flexcore Product Overview 
+View Video > 
+External Link - Use when the corresponding link opens a new tab, or leads to another site. 
+For example, a link to a distributor site would have this icon next to it. Icon right of label: External link label 
+Chevron - Call-to-Action links and buttons use the Chevron character: U+203A Unicode for 
+“single right facing quotation mark”. Icon right of label: View Panduit Cable Cleats offering 
+Download - Use for all downloads that are not PDFs, such as EXE files, or other types of files 
+that will be downloaded. Icon left of label 
+Panduit UPS Firmware - Download 
+Download Panduit UPS Firmware 
+Print Icon left of label Print 
+Share Icon left of label Share 
+Social Sharing Icons - Display each social icon within a round circle in the order 
+as shown: 
+• White background: use a Panduit Primary Blue circle with the icon in white, 
+• Dark background: use a white circle and make the icon the same color as the 
+background. 
+No label is needed 
+
+
+Note: See the Icon Library (Figma File) for more examples or to get icons. 
+
+
+Image Look & Feel 
+
+Do not use generic images that look like they came Keep images simple with a single, clear, and strong The smaller the image size in the final design the 
+from stock photography (even if they have). point of focus. simpler it should be, (or else it is hard to tell what the 
+image shows). 
+
+
+This generic image is used by two competitor Busy stock image Simple images with a strong focal point (person) scale 
+websites better 
+
+Choose evocative images and modify the image to 
+make it unique, simple, and more “on brand”. 
+
+
+Don’t use busy images that become a blur when scaled
+
+Clearer point of focus (warehouse worker) 
+
+down in the final design or in mobile view 
+
+
+
+Continued on next page 
+
+
+
+Use human/environment focused imagery to tell the story of 
+the benefit of our products, not “tech-y” imagery. Studies 
+show that people respond more to faces vs. images of factories 
+or labs. 
+
+Emotionally evocative image focused on the benefit of 
+
+network solutions, with a strong focal point 
+
+
+When showing people, consider how the image is 
+cropped: do not cut off the head
+Image Look & Feel Cont. 
+
+Communicate “quality” and “premium” through the image 
+simplicity, image quality and subject matter. 
+
+Evocative image focused on the benefit of 
+
+sustainability, with a strong focal point 
+
+
+When showing people, consider how the image is 
+cropped: do not cut off the head
+Color and saturation – images should feature at least one 
+brand color or shade, see: Color in the Panduit Brand Style 
+Guide 
+
+
+Don’t use images without any brand colors 
+Don’t use cartoon images 
+
+Telling a Story With Visual & Message Consistency 
+
+Use the same visual language and 
+messaging to tell a strong compelling brand 
+story - Apply the same design elements 
+throughout all the related assets (social media 
+ads, emails, landing pages, page banners, 
+product overview page, case study/white paper/ 
+blog posts, print brochures, etc.) to tie them all 
+together and reinforce the main campaign/ 
+product/brand message. 
+
+For example, all Apple Inc. visual 
+communications have consistency regardless of 
+which Apple product is represented and can be 
+instantly recognized because of the strong 
+brand language, even if the assets have slight 
+variation for each new product launched. This is 
+what we are aiming for. 
+
+While all assets need to adhere to the overall 
+Panduit brand guidelines to be recognizable as 
+Panduit products, a given campaign can focus 
+more on the brand design elements that best 
+represent the unique product attributes. For 
+example, use more black and yellow to tie in to 
+the safety features of VeriSafe, or a light, clean 
+and crisp look with grays and transparency for 
+product “X”. 
+
+
+Panduit.com home page 
+VeriSafe page 
+
+
+Product introduction on the carousel banner (example) ties in to the design elements on 
+the VeriSafe page and other assets. 
+
+
+Example of a header banner 
+design that can be used in lieu of 
+
+video, or as the first frame of a 
+
+video that ties into the same look 
+& feel. 
+
+Banners with a CTA 
+
+
+
+Product Hero Image 
+
+Product Hero Images 
+
+Compelling hero images have the power to 
+captivate and engage audiences. 
+
+Hero images are large images that dominate the 
+page. Use a hero image to showcase a product, to 
+
+help tell a story and to provide context (benefits of 
+
+the product, happy customer faces, logos, etc.), to 
+help reinforce the brand, or the main message. 
+
+Hero images are usually anchored in the most 
+prominent position such as on top of the page. 
+They are frequently used in banners. 
+
+• Image Size: Depends on page template/ 
+use: Hero images are used at the top of 
+the page in the Featured Product/System 
+Template, in the Two Column Banner and 
+in the Carousel Banner on top of the 
+home page 
+• Show the full product, at an angle, to give 
+it dimension, or show part of the product 
+in a close up to highlight a feature, or add 
+interest 
+• Image background should be simple -
+Product hero images work best either on a 
+white/light gray background, or for more 
+drama on a dark background, ideally with 
+more dramatic lighting in the photo 
+Hero image in the banner of the Featured 
+Product/System page (Example) 
+
+
+1:1 Square Product Hero Image used in the banner of the Featured Product 
+Page 
+Product Hero Image with dramatic lighting 
+
+
+
+Image Specifications 
+
+
+
+Avoid text in the image itself. Text 
+in the image is not ADA compliant 
+and cannot be translated. 
+
+
+Don’t: Use blurry images 
+
+Don’t: Images supplied in the 
+wrong size will end up distorted. 
+
+Technical Specifications 
+
+• Size: Web optimized, 72 dpi Image resolution (or 
+at least 150 dpi for images that need to be 
+optimized). Large images, or full-screen 
+background images should be no more than 
+300KB. If you’re using a full-screen background, 
+use an image that’s 2000 pixels wide. Most other 
+small web graphics to be 100 KB or less. See: 
+Image Size Chart for specific dimensions of 
+
+individual graphics. 
+
+• Color Mode: RGB 
+• Format: JPEG, or PNG if transparency is to be used 
+• File Naming: Follow image file naming convention 
+for the file, see:Digital Content Naming & Tagging 
+Guide 
+• General image size: 500px by 500px. For 
+exceptions see: Image Size Chart 
+• Always include an Image Alternative Text for each 
+image. See: Alternative Text Guidelines (SEO) 
+• Quality: Sharp, high quality images; not distorted 
+or blurry 
+• If a partner part is shown; it needs to be 
+disclosed Example: An image showing systems 
+with Cisco and Panduit parts would have a caption 
+and alt text with this information 
+Quality: Sharp, high quality images; not distorted or blurry 
+
+
+No low quality images - image 
+
+quality reflects on our brand 
+
+
+
+
+Image Size Chart 
+
+Page(s) Images Size (72 dpi, file size <100 KB) 
+Notes 
+Home page “Featured Products” Images 255px x 184px 
+Product Category (L1) Images “Featured” 255px x 154px If 500x500 image is provided, it will crop to top 50% 
+Product Category (L1) Product Subcategory Images 500px x 500px Product fills 85% or more of the image with a white background 
+Featured Product/System Product Hero Image in header banner 1:1 500px Product fills 85% or more of the image with a transparent background 
+Featured Product/System All See: Featured Product/System 
+Markets & Applications “Featured” Image 540px x 300px 
+Markets & Applications Related Solutions & Products Images 160px x 160px or 500px x 500px 
+Markets & Applications Resources Images 330px x 160px See: Video for video image specifications 
+Application Hub/Parent page All See: Application Hub/Parent page for a link to image information 
+Application Sub page All See: Application Sub page for a link to image information 
+Blog Main Blog Image 1270px x 720px Image on top of the blog page 
+Blog Supporting Blog Images (optional) 1270px x height can vary If additional images are added to the post they should not be for 
+decoration but be relevant 
+Blog Product Images (optional) 500px x 500px Product fills 85% or more of the image with a white background 
+
+
+
+Carousel 
+Banner 
+
+F“eatured 
+Products” 
+
+Image Sizes: Home Page 
+
+“Featured Products” Images on the 
+Home Page 
+
+Product images need to be presented in a consistent and 
+deliberate way to all work together in this space and to highlight 
+the high quality of our products. 
+
+• Image Size: 255px x184px 
+
+• White background 
+• Web optimized and high quality 
+• Simple and clear with a strong point of focus 
+• It’s recommended to show the entire product and it’s 
+distinguishing features 
+• Products should fill 85% or more of the image frame 
+• Don’t show the product in context as this may result in an 
+image that is too complex 
+• TIP: Test the image by previewing it at it’s intended size and 
+taking several steps away from your computer. If you can’t 
+tell what is represented in the image, it’s too complex. 
+Panduit.com home page 
+
+
+Sole product on a white 
+
+background 
+
+No distorted, wrong 
+size, or low quality 
+images 
+
+Images with multiple 
+products, too busy, or with 
+
+products “flying in” 
+
+
+Image on page is too 
+
+small to effectively show 
+
+products in context: it 
+may not be clear which is 
+the actual product 
+
+
+
+Image Sizes: Market Pages 
+
+Hot Spot Banner 
+
+Content for various page sections is shown in tabs, above 
+example shows an open “Products” tab 
+
+
+“Featured” Image 
+
+Use an image that best represents one aspect of what you are 
+trying to communicate and make that the central focus of the 
+image. Do not use collages or complicated images. 
+
+Image Size: 540px x300px 
+
+Network Infrastructure Market 
+page example 
+See: Market Page Template 
+
+
+Related Solutions & Products Images 
+
+These images become extremely small in the mobile layout, so 
+they need to be as simple as possible. For products, use a single 
+
+representative product centered on a white background, filling at 
+
+least 85% of the space. For solutions the images should be simple 
+“iconic” representations of a given solution. 
+
+Image Size: 160px x160px 
+
+
+Resources Images 
+
+If using imagery from the cover of a resource, use the source 
+design/image without text to give the user a visual tie in to the 
+resource, but without having text in the image itself. 
+
+Image Size: 330px x160px 
+
+
+
+Image Sizes: Product Category (L1) Page 
+
+Product 
+Subcategory 
+Image 
+“Featured” 
+(not shown 
+on mobile) 
+Video 
+Resource 
+(card) 
+Resource 
+(card) 
+
+Product Category (L1) page 
+example 
+
+
+Resource Card 
+
+A card contains an image, a description, and (optionally) a Call-to-
+
+Action, or identifies the type of resource (gray text). The entire 
+
+element is one link. 
+
+Make the resource images represent the resource, but avoid text in 
+the image. 
+
+Image size: 255x154px 
+
+“Featured” and Product Subcategory Images 
+
+This component is used only on our Product Category pages (L1) 
+and features a subcategory of parts belonging to that group. 
+Subcategory images show one representative product on a white 
+background. 
+
+Image size: 255x154px 
+
+Video 
+
+Image size varies, see: Video 
+
+Recommended sizes: 640x360px or 426x240px 
+
+
+Image Sizes: Panduit Blog 
+
+Main Blog 
+Image 
+Product 
+Image 
+Supporting 
+Blog Image 
+Example blog post pages 
+
+Main Blog Image 
+
+These images should relate to the content of the post, and be 
+interesting enough to draw the reader in. Try to avoid generic 
+
+office imagery and images that are too “techy”. They will make 
+
+the post look dated. People gravitate to images of other people 
+so images of people using products mentioned in the post or 
+
+showing benefits from the technology are best. 
+
+Image Size: 1270px x720px 
+
+Product Images 
+
+These images are to be used only if a specific product is 
+
+referenced in the post. The image should have a white 
+background and feature a good quality image of the product. 
+
+Image Size: 500px x 500px 
+
+Supporting Blog Images 
+
+These images are to be used to help illustrate the blog topic 
+and may include charts and other graphics. They should be 
+high quality and (the text if any) should be large enough to be 
+easily read. 
+
+Image Size: 1270px x height can vary 
+
+
+Video 
+
+Displaying Video on a Page 
+
+Video Title Frame is the first frame of the video. It is to be 
+
+representative of the video content. The title of the video may be 
+included on non-YouTube videos. 
+
+The first frame is not 
+
+representative of the content; 
+
+
+Video with a first frame 
+
+representative of the video
+
+it does not entice the viewer 
+
+content 
+
+
+Overlay image: Place title so it is not obstructed by the 
+“play” button 
+
+An overlay image is used in place of, or in addition to, a title 
+frame and has to be supplied for: 
+
+• Video added to the page from the DAM (Digital Asset 
+Management), or 
+• For any video that is not displayed at full width of the 
+page. It will link to the actual video played in a light box. 
+Overlay Image Specifications: 
+
+• Image aspect ratio 3:4 or 16:9 – it should match the 
+video aspect ratio 
+-Overlay Image Sizes for 16:9 aspect ratio: 
+
+854px x 480px, 
+640px x 360px, 
+426px x 240px 
+
+• If a title is to be shown (optional), 
+-Don’t place the text or the logo in the middle of the 
+viewable area 
+
+-Text to background contrast rules apply, see: 
+
+Typography Contrast Guidelines 
+
+• Don’t include the “play” button in the image (it is 
+added automatically) 
+Additional Video Resource: 
+
+See Adding DAM and YouTube Videos to learn more about 
+
+uploading videos and file size limit for AEM DAM. 
+
+
+YouTube Video 
+
+If a YouTube video will be shown at full page width, it can be 
+played right on the page and no image overlay is needed; 
+otherwise a placeholder image needs to be used and the video 
+itself should open to play in a light box. 
+
+Note: If the video is already on YouTube, provide the author a 
+
+YouTube link, not the link to the DAM, or to the actual video file. 
+
+
+Video thumbnails on the Panduit YouTube Channel: Actual 
+video title within the video frame is not needed/not best 
+practice as they are too small to read in the thumbnail and 
+the title is displayed right below 
+
+
+Components 
+
+
+Banners 
+
+“On brand” design with a 
+single, strong focal point 
+A short descriptive 
+headline 
+A Call-to-Action (CTA) 
+Example of a carousel banner panel. Best practices apply to all banners wherever they are used. 
+
+There are several types of banners used on the website. The • Think “less is more”- A clear, clean, and simple design • A short descriptive headline (the less words the better); 
+following guidelines apply to all banners. with a strong focal point works best. banner headlines will be title case. 
+
+• Treat digital banners as if they are billboards - they • Use strong, “on brand” imagery (or none at all) — This • A Call-to-Action (CTA) — What do you want your visitors 
+are to be briefly glanced at, create an impression, and means avoid using a stock image, or if using, customize to do? Make it concise and action oriented. Note: Style of 
+entice viewers to find out more. 
+it. Nothing screams “generic” more then a stock image. the CTA varies per banner type. 
+See: Image Guidelines. 
+
+Continued on next page 
+
+
+Banner Design Best Practices 
+
+Know your purpose: 
+
+• Increase brand awareness and enforce the brand qualities that matter most 
+(such as when designing a banner for the page title) 
+• Highlight a new product 
+• Promote an upcoming event 
+• Draw attention to the next step you want the user to take on the page 
+• Raise awareness of useful tools or features 
+Highlight a new product by showing a product, or it’s application 
+
+
+Instead of being literal (for example by showing a cover of the report here), use evocative images 
+that represent the concept to emotionally connect with the viewer 
+
+
+Highlight a new product: The product does not always need to be shown, in fact linking to a 
+white paper or case study may be a good way to introduce the product 
+
+
+Raise awareness of useful tools or information 
+
+Continued on next page 
+
+
+Banner Design Best Practices: Text 
+
+Text 
+
+Our typography is the physical representation of 
+our brand’s voice. We use type to establish visual 
+hierarchy through style, weight, and color to 
+support deliberate communications. 
+
+Banner text 
+
+• Keep text concise. Limit text to a 
+maximum of 15 words total (for title and 
+introductory text). Get the message across 
+as succinctly and directly as possible 
+-banners are meant to be viewed “at a 
+glance”. 
+• Use the H1 text style/tag 
+appropriately. Use only when a 
+banner is used in place of a page title. 
+• Don’t place text in the image itself. 
+The text will not be readable by users 
+with visual disabilities who use 
+assistive devices. The banner can’t be 
+reused for other language sites 
+without recreating the image, and it 
+can’t be picked up by search engines. 
+The text will get cut off on different 
+
+devices. 
+
+• Mind text contrast. Make sure the text is 
+readable against the background. 
+Text hard to read: Contrast of Limit text to 15 words. Avoid placing text in the graphic of the banner - it will be cut off 
+text and background is not on some displays and will not be readable by search engines 
+adequate and screen readers. 
+
+
+No clear point of 
+focus 
+
+Use H1 style 
+only for page 
+titles & banners 
+on top of the 
+page that 
+contain the 
+
+Banners used for the page title must be authored as a H1 and the text 
+
+page title 
+
+should match the page breadcrumbs. Use H1 only once per page. 
+
+
+
+Banner Design Best Practices: Images 
+
+Banner Images 
+
+• Banner Images to be web optimized; see 
+Image Guidelines for overall technical and style 
+guidelines 
+• Banner image size: See Banner Image & Text Size 
+Chart 
+• Test the design on different screens sizesto 
+ensure that what’s most important does not 
+get cut off. 
+
+
+Renewable 
+
+
+Carousel Banner on 1900px wide screen 
+
+
+Desktop: 1200px 
+
+
+• Make the banner pop from it’s surroundings 
+-Go big & minimal: Use a large image since larger 
+elements attract more attention than multiple smaller 
+items 
+
+-Create contrast: Use color (or lack of it), scale and/or 
+repetition, as well as “white space” to help make it pop 
+
+-Clear focal point: Too many design elements are 
+distracting, so keep it simple: Use a featured product 
+image, or have text be the focus when used with a 
+dimmed background image 
+
+-Stress the message: Use strong, but simple visuals to 
+support the overall message, not detract from it 
+
+-Use design elements to communicate premium 
+quality, but not “exclusive”: Think “Lexus” not “Aston 
+Martin” 
+
+• Consider using images that do not represent the 
+item you are selling, but instead convey the benefit 
+to the user 
+
+• Image continuation: If you choose a particular 
+image for the carousel home page, consider a 
+similar image (not identical) for the header of the 
+page it will lead to. See: Telling a Story Through 
+Visual & Message Consistency. 
+Clean, clear and simple design that draws attention 
+
+
+Busy banners with competing design elements 
+
+
+Avoid harsh lines or flat no dimension “floating” partial 
+
+product images 
+
+
+Tablet: 800px x 400px Mobile: 320px 
+
+
+Carousel Banner 
+
+Panduit.com Home page 
+
+
+Banner Title 
+
+Description 
+
+Call-to-Action 
+
+Active Panel 
+Indicator 
+
+Carousel banner animates by rotating through a series of 2-5 
+panels. Each indicator dot represents a panel of content, and the 
+blue dot indicates the currently displayed panel. This banner is 
+used on the Panduit website homepage . 
+
+Carousel Banner -desktop 
+
+
+• Carousel image size: 1900px by 400px 
+-The width of the banner changes based on the screen 
+size the device it is viewed on. On smaller displays, the 
+image gets cropped from the right side up to the 
+smallest width of 320 pixels. 
+
+-Banner height is fixed at 400px, however, on wide 
+
+displays the viewable area stays constant (like a 
+window), but the image itself grows beyond the 
+viewable area and gets cropped on the bottom. See 
+design examples on the following page for designs 
+that work best. 
+
+Carousel banner-mobile 
+
+
+• Text color options: Use black #303030 on a light 
+background or white #F7F7F7 on a dark background 
+• Call-to-Action: To increase visibility of the call-toaction 
+text, use all caps and a chevron character 
+following the CTA - (Unicode character: U+203A) 
+• Because the whole banner is clickable, it does not 
+support a CTA button component 
+• Carousel panels should link to Panduit pages, not 
+Marketo pages, or pages that take the viewer away 
+from the Panduit website 
+
+Carousel Banner: Look & Feel Guidelines 
+
+Carousel Banner Design Options - Reflect 
+
+the “premium quality” of Panduit through 
+strong imagery, limited design elements, 
+and easy to read message to convey the 
+
+sophistication of our offering. Remember 
+
+to test and optimize for multiple display 
+sizes. Carousel Banner Photoshop 
+template 
+
+
+Text Area 
+(40px Padding on left) 
+Bottom is cut off on wider screens
+Right side is cut off 
+on smaller screens 
+Image 
+Focus 
+1900x400 pixel size for background images 
+
+
+Option 1. Product Hero image with dramatic lighting (think Apple Inc. product 
+banners as inspiration and faded gradient to black (shown), white or dark blue (not 
+shown) 
+
+
+Option 2: Product Image: Create a pattern with the product and colorize it 
+(optional) to make it blend in with the background. Here the left 50%+ of the image 
+has a gradient overlay to make the text easy to read 
+
+
+Option 3: A close up view of a product application. Entire image is dimmed using 
+a #000000 overlay with opacity set between 40%-70% 
+
+Product application image with an opacity gradient overlay in #000000 (black) at 
+75% opacity fading to 0% opacity, to create adequate contrast for ease of reading 
+text (check contrast) 
+
+
+Product application image with an opacity gradient overlay in #FFFFFF (white) with 
+starting opacity between 50%-75% 
+
+
+
+Header Banner 
+
+“Header Banner” Component 
+
+This banner is used instead of a title on lower 
+level/child content pages. 
+
+The banner width spans 100% of the page, but 
+the vertical space is limited. Due to unpredictable 
+image cropping on certain devices, abstract 
+patterns are preferred over representative 
+images. Page titles should be short, unique, and 
+ideally match breadcrumbs, always using the H1 
+text style. 
+
+Image Size: 1280px by 242px 
+
+
+Header Banner Component: Do use simple patterns for the background. Pattern(s) will be supplied by 
+the Digital Team. For more information, see: Patterns in the Panduit Brand Style Guide 
+
+
+Header Banner Component: Don’t use a lot of text in the banner; When in doubt avoid or 
+limit introductory text 
+
+
+Header Banner is cropped in the tablet view: The main 
+focus of the image is no longer visible. In this banner 
+avoid images with a strong focal point when using the 
+Header Banner component 
+
+
+Two Column Banner 
+
+These banners are used for the page title, to 
+highlight features or for the main Call-to-Action 
+at the end of a page. These responsive banners 
+display content in two columns side by side on 
+larger screens and stack content vertically on 
+mobile devices. Examples of use: 
+
+Header in Featured Product/System pages 
+
+• Foreground product image: PNG 
+format, 1:1 aspect ratio at 500px with 
+transparency 
+• Background image: a HEX color 
+background can be specified, or a 
+
+subtle gradient in brand colors, from 
+one of the existing pages can be 
+used. To create a new background, a 
+desktop image: 1440x460px or 
+1280px x 456px size and a mobile 
+image is needed. 
+
+Header in Application Hub/Parent page it is a 
+solid image 4:3 ratio at 960px by 720px 
+
+
+Two Column Banner on the Featured Product/System 
+page has a foreground image of the product and a 
+background image for desktop and one for mobile, so 
+it works in both layouts. 
+
+
+Mobile view 
+Product foreground image is 1:1 square aspect ratio (500px by 500px) 
+
+so that it works in both desktop and mobile views. The product is to fill 
+
+90% of the image space. 
+
+
+Do not use images with too much dead space, too many details, or 
+tiny products. 
+
+Two Column Banner used as a CTA Banner: Copy and a CTA button 
+is used to direct the user to the next action after viewing the 
+page. Image aspect ratio here is 4:3 with a 960px by 720px image 
+(same as above). 
+
+
+
+Distributor Portal Promotional Banners 
+
+Panduit marketers can target and personalize content to a Promotional banners are available for all Panduit Distributor Use these banners to promote select marketing content such as: 
+specific audience on the home page of the Panduit Distributor Portal language sites, and promotions can run concurrently for 
+
+• Best Sellers and featured products promotions 
+Portal. different distributor audiences. 
+
+• Events and training 
+• New product roll-outs 
+• Account-based campaigns 
+728x90px -Horizontal Banner (on bottom) 300x600px - Vertical Banner Area (on right) 160x600px -Narrow Vertical Banner (on right) 
+
+
+Banner: Image & Text Size Chart 
+
+Banners Image Size (72 dpi web optimized) Notes 
+Two Column Banner Multiple sizes See the Two Column Banner page for information on sizes 
+Header Banner With Title only 1280px x 242px This banner is used to display the page title on top of the page. Banner title: H1: Bold/900 weight, 30pix height/33pix 
+line height, color: #FFFFFF 
+Carousel Banner - Background Image 1900px x 400px; (150 dpi) 
+Banner title: custom H1 style: Museo Sans Serif 700/Medium weight, 40pix height/44pix line height, color: use black 
+#303030 on a light background, or off-white #F7F7F7 on a dark background. Note: The horizontal bar is always 
+shown as part of the title. Text alignment can’t be manipulated. 
+Description text: 700/Medium 16pix height/24pix line height 
+CTA text: 900 (bold) 18pix height/22pix line height, color: same as banner title color, Note: Copy and paste in a 
+chevron character after the CTA, (U+203A Unicode ), see: Frequently used Icons 
+Distributor Portal Promotional Banner Sidebar Large 
+300px x 600px Banner is made up of image only; text has to be included in the image itself 
+Distributor Portal Promotional Banner Sidebar Small 
+160px x 600px Banner is made up of image only; text has to be included in the image itself 
+Distributor Portal Promotional Banner Footer 728px x 90px Banner is made up of image only; text has to be included in the image itself 
+
+
+Buttons 
+
+Buttons are interactive components used to 
+select options or to perform actions. Buttons are 
+used in Forms and in banners or within a page 
+for the Primary Call-to-Action. 
+
+
+Primary Button is used for primary actions and 
+primary CTAs 
+
+
+Secondary Button is used on Panduit.com for 
+secondary actions and CTAs 
+
+
+Accent Alternative Button is used only for the 
+“Request a Demo” CTA on Panduit.com 
+
+
+Button Labels 
+
+• Make button labels short & concise 
+• Use verbs (active imperative form) & task-specific 
+language, to represent the action the button will 
+accomplish, for example: next’, ‘complete’, ‘start’, etc. 
+• Avoid vague language that can confuse users: Use 
+“Discard” and “Save” instead of “Yes” and “No” 
+
+
+Short, descriptive, action oriented labels 
+Avoid labels such as “Yes” and “No”; instead label 
+with the expected action that will take place when 
+button is clicked. 
+
+
+• Use mixed case text for labels, NOT all uppercase 
+letters -using uppercase letters is like shouting 
+• Don’t use punctuation - no question mark or 
+exclamation point -punctuation is a sign that the 
+button is not standing out against other content- this is 
+often because of competing design elements. 
+Less is more: Keep labels to one or two words, 
+don’t use punctuation or all uppercase letters 
+
+
+Button Stacking 
+
+In mobile, the primary action (and primary button) should 
+always be placed topmost, followed by secondary option(s) 
+if any: 
+
+
+
+Buttons: Primary Action Button 
+
+
+Primary Action Button should represent the 
+most likely action the user is expected to take if 
+the button is clicked. 
+
+
+Default 
+
+Button 
+
+Height: 48px 
+Background color: #0071B2 
+Border radius: 8px 
+Padding: 11px, 24px 
+
+Button shadow color: #00416A 40% 
+or 
+rgba(0, 65, 106, 0.40) 
+
+Shadow offset: X:1, Y:4, B:8, S:0 
+
+
+Label 
+Text color: #FFFFFF 
+Text size: 16px 
+Typeface: Noto Sans 600 (Semibold) 
+Justify: Center 
+
+Hover 
+
+Button 
+
+Height: 48px 
+Background color: #005F94 
+Border Radius: 8px 
+Padding: 11px, 24px 
+
+Button shadow color: #00416A 40% 
+or 
+rgba(0, 65, 106, 0.40) 
+
+Box shadow: X:1, Y:4, B:8, S:0 
+
+Label 
+
+(Same as Default state) 
+
+Pressed 
+
+Button 
+
+Height: 48px 
+Background color: #004D77 
+Border Radius: 8px 
+Padding: 11px, 24px 
+
+Label 
+
+(Same as Default state) 
+
+Disabled 
+
+Button 
+
+Height: 48pxBackground color: #E2E8F0 
+Border Radius: 8pxPadding: 11px, 24px 
+
+Label 
+Text color: #E2E8F0 
+Text size: 16pxTypeface: Noto Sans 600 (Semibold)
+Justify: Center 
+
+
+Buttons: Alternative Action Button 
+
+
+Alternative Action Button is used to bring 
+attention to an alternative primary action to the 
+one the user would usually take. 
+
+Note: This button is to be used with the Primary 
+action button (blue); not in lieu of it. 
+
+
+The Primary Button style is used site wide for the 
+“Add to List” action including on the Product 
+Detail Page. However, for some parts another 
+important action is available: a demo can be 
+requested. In this scenario the “Request a Demo” 
+button (green) is displayed along with the primary 
+“Add to List” button. The Alternative Action Button 
+draws attention while the consistency of using the 
+primary button for the “Add to List” action. 
+
+
+Default 
+
+Button 
+
+Height: 48px 
+Background color: #00856A 
+Border radius: 8px 
+Padding: 11px, 24px 
+
+Box-shadow: #005843 40% 
+or 
+rgba(0, 88, 67, 0.40) 
+
+Label 
+Text color: #FFFFFF 
+Text size: 16px 
+Typeface: Noto Sans 600 
+(Semibold) 
+Justify: Center 
+
+Hover 
+
+Button 
+
+Height: 48px 
+Background color: #006651 
+Border Radius: 8px 
+Paddingr 11px, 24px 
+
+Box-shadow: #005843 40% 
+or 
+rgba(0, 88, 67, 0.40) 
+
+Label 
+
+(Same as Default state) 
+
+Pressed 
+
+Button 
+
+Height: 48px 
+Background color: #005D4A 
+Border radius: 8px 
+Padding: 11px, 24px 
+
+Label 
+
+(Same as Default state) 
+
+Disabled 
+
+Button 
+
+Height: 48px 
+Background color: #E2E8F0 
+Border radius: 8px 
+Padding: 11px, 24px 
+
+Label 
+Text color: #E2E8F0 
+Text size: 16px 
+Typeface: Noto Sans 600 (Semibold) 
+Justify: Center 
+
+
+Buttons: Secondary Button 
+
+
+Secondary Buttons represent the 
+alternative action the user may take that 
+is less likely then the primary action. 
+
+
+Default 
+
+Button 
+
+Height: 48px 
+Background color: #FFFFFF 
+Border: 1px solid #74A9C8 
+Border radius: 8px 
+Padding: 11px, 24px 
+Box-shadow: X:1, Y:4, B8, S:0 
+#000000 20% 
+or 
+rgba (0, 0, 0, 0.2) 
+
+Label 
+Text color: #303030 
+Text size: 16px 
+Typeface: Noto Sans 600 (Semibold) 
+Justify: Center 
+
+Hover 
+
+Button 
+
+Height: 48px 
+Background color: #F5FBFF 
+Border: 1px solid #6198B8 
+Border radius: 8px 
+Padding: 11px, 24px 
+Box-shadow: X:1, Y:4, B8, S:0 
+#000000 20% 
+or 
+rgba (0, 0, 0, 0.2) 
+
+Label 
+
+(Same as Default state) 
+
+Pressed 
+
+Button 
+
+Height: 48px 
+Background color: #E5F5FF 
+Border: 1px solid #558FB0 
+Border radius: 8px 
+Padding: 11px, 24px 
+
+Label 
+
+(Same as Default state) 
+
+Disabled 
+
+Button 
+
+Height: 48px 
+Background color: #E2E8F0 
+Border Radius: 8px 
+Padding: 11px, 24px 
+
+Label 
+Text color: #E2E8F0 
+Text size: 16px 
+Typeface: Noto Sans 600 (Semibold) 
+Justify: Center 
+
+
+Call-to-Action (CTA) 
+
+A Call-to-Action (CTA) is a type of hypertext used 
+to prompt an immediate action. (i.e. “Contact an 
+Expert”, “Learn About Our Strategy”, “Watch The 
+
+
+Example of a CTA text link
+
+Overview Video”). 
+
+CTA’s can be simple text hyperlinks, or they can 
+be authored in a button. Good CTA text should 
+be: 
+
+• Short: 1 to 5 words and 25 characters or 
+less, (if need it to be longer, use a text 
+link instead as button text will get cut off 
+
+
+on mobile) 
+
+• Action oriented - Use action verbs 
+• To the point- state what action will take 
+place, or where it take the user 
+• Convey urgency 
+• Usually followed by a chevron icon 
+(Unicode character U+203A ) 
+Example of a CTA button on a dark background in a CTA banner 
+
+
+
+Check Box 
+
+A Check Box allows the user to make a simple 
+binary choice to “opt in” to the corresponding 
+option by checking the check box. 
+
+Unlike radio buttons, which must be used in 
+groups of two or more to represent mutually 
+exclusive choices, check box(es) can be used to 
+represent one or more choices that are not 
+mutually exclusive. 
+
+For example, the user can choose option A and B 
+and C. 
+
+Choose one or more of the options below: 
+
+
+Default 
+
+Button 
+
+Height/Width: 22px, 22px 
+Background color: #FFFFFF 
+Border: 1px solid #D4D9DF 
+Border radius: 3px 
+Padding: 13px, 16px 
+Box-shadow: 0px 2px 4px 0px rgba 
+(0, 0, 0, 0.2) 
+
+Label 
+
+Text color: #303030 
+Text size: 16px 
+Text line height: 22px 
+
+Spacing between label & field: 12px 
+
+
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Hover 
+
+Button 
+
+Height/Width: 22px, 22px 
+Background color: #F5FBFF 
+Border: 1px solid #6198B8 
+Border radius: 3px 
+Padding: 13px, 16px 
+Box-shadow: 0px 2px 4px 0px 
+rgba(0, 0, 0, 0.2) 
+
+Label 
+
+(Same as Default state) 
+
+Selected 
+
+Button 
+
+Height/Width: 22px, 22px 
+Background color: #0071B2 
+Border: 1px solid #0071B2 
+Border radius: 3px 
+Padding: 13px, 16px 
+Box-shadow: 0px 2px 4px 0px 
+rgba(0, 73, 118, 0.2), 0px 1px 1px 
+0px rgba(0, 73, 118, 0.50) inset 
+
+Checkmark 
+Fill: #FFFFFF 
+(Reach out to the Digital design team 
+for vector icon) 
+
+Label 
+
+(Same as Default state) 
+
+Disabled 
+
+Button 
+
+Height/Width: 22px, 22px 
+Background color: #E2E8F0 
+Border: 1px solid #94A3B8 
+Border radius: 3px 
+Padding: 13px, 16px 
+
+Label 
+Text color: #C0C0C0 
+(Same as Default state) 
+
+
+Forms: Best Practices 
+
+Forms are known to be tedious to complete. Design forms to help 
+the user complete them quickly and easily: 
+
+Recommended background colors: white (#FFFFFF) or gray 
+
+(#F0F0F0) 
+
+• Use one column layout 
+• Group related fields;For example, group fields related 
+to personal information (First Name, Last Name) and 
+fields related to contact information (Phone Number, 
+
+Email). 
+
+• Ask only what’s required: Shorter forms lead to 
+higher conversion. 
+
+-Try to avoid optional fields in forms, but if 
+used, clearly distinguish optional fields by marketing 
+them “optional” within the label 
+
+
+Action Buttons 
+
+• Use primary button styling for the primary action you 
+want the user to take and secondary button styling for 
+the secondary buttons/actions 
+• Button Labels: See: Buttons 
+Input Control Labels (see: also Input fields) 
+
+• Use the appropriate field label for each form input 
+control (input fields, drop down, check boxes, and 
+radio buttons) to comply with Web Content 
+Accessibility Guidelines (WCAG) 2.0 
+
+
+• Place labels on top of the input control & left align 
+• Title case: Avoid all caps, use title case: “This Is Title 
+Case” 
+• No “in-line labels”, or hint text inside the text field 
+• Colors/contrast: Ensure adequate contrast to comply 
+with ADA Guidelines 
+Feedback 
+
+• Confirmation:Show a confirmation when the form is 
+successfully completed 
+
+• Error messages: Show message explaining corrective 
+actions that user should take 
+Form with a Confirmation Message 
+
+
+
+Drop-down Menu 
+
+A Drop-down is a box that, when it 
+gains focus, shows a list of 
+selectable options. 
+
+Use a drop-down for five or 
+
+more options that need to be 
+presented in a compact space. 
+By default, no option should be 
+selected and the drop-down 
+should show: 
+
+
+Default 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 1px solid #D4D8DD 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 0px 2px 4px 0px 
+rgba(0, 0, 0, 0.20) 
+
+Label 
+Text color: #303030 
+Text size: 14px 
+Text line height: 20px 
+
+Spacing between label and field: 8px 
+
+
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Input Option Text 
+
+Text color: #5A5F66 
+Text size: 16px 
+Line height: 22px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Arrow 
+
+Height/Width: 10px/6px 
+Color: #303030 
+Padding: 16px, 22px 
+
+Hover 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 1px solid #595959 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: rgba (0, 0, 0, 0.2) 
+inset X:0px Y:2px Blur: 4px 
+
+Label 
+
+(Style same as Default state) 
+
+Input Option Text 
+
+(Style same as Default state) 
+
+Arrow 
+
+(Style same as Default state) 
+
+In Focus 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 2px solid #0071B2 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 2px 2px 4px 0px 
+rgba(0, 113, 178, 0.20), -2px -2px 
+4px 0px rgba(0, 113, 178, 0.20) 
+
+Label 
+
+(Style same as Default state) 
+
+Drop-down Options 
+
+Use default system/browser styling 
+for the drop-down options, so it 
+works well on all browsers and 
+touchscreen devices. 
+
+Arrow 
+
+(Style same as Default state) 
+
+Error 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 2px solid #D0021B 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 2px 2px 4px 0px 
+rgba(208, 2, 27, 0.20), -2px -2px 
+4px 0px rgba(208, 2, 27, 0.20) 
+
+Label 
+
+(Style same as Default state) 
+
+Input Option Text 
+
+(Style same as Default state) 
+
+Arrow 
+
+(Style same as Default state) 
+
+Error Message Text 
+Text Color: #D0021B 
+Text size: 14px 
+Text line height: 20px 
+
+Spacing of input field & error 
+
+message: 4px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Default with Input 
+
+Field 
+
+(Style same as Default state) 
+
+Label 
+
+(Style same as Default state) 
+
+Input Option Text 
+
+Text color: #303030 
+Text size: 16px 
+Line height: 22px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Arrow 
+
+(Style same as Default state) 
+
+
+Input Fields 
+
+Input fieldsallow users to input 
+text into a form. 
+
+Form Input Fields Guidelines 
+
+• Mobile: All fields to be the 
+same length 
+
+• Desktop: Minimum/ 
+maximum length of field 
+
+to correspond to data to 
+be input, for example, the 
+
+text field for “Zip code” 
+
+would be much shorter 
+
+than the field for the 
+“StreetAddress”. 
+
+
+• If both required and 
+optional fields are 
+
+included in the form, then 
+
+identify the optional fields 
+
+as such by adding 
+
+“optional” text after the 
+
+label. 
+
+
+Tip: Helper Text 
+
+Default 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 1px solid #D4D8DD 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 0px 2px 4px 0px rgba(0, 
+0, 0, 0.20) inset 
+
+Label 
+Text color: #303030 
+Text size: 14px 
+Text line height: 20px 
+
+Spacing between label and field: 8px 
+
+
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Helper Text 
+
+Text Color: #5A5F66 
+Text size: 14px 
+Text line height: 20px 
+
+Spacingbetweenhelpertext&field:4px 
+
+
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+
+Tip: Helper Text 
+
+Hover 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 1px solid #595959 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: inset 0px 2px 4px 
+0px rgba(0, 0, 0, 0.20) inset 
+
+Label 
+
+(Same as Default state) 
+
+Input Text (if any) 
+
+Text Color: #303030 
+Text size: 16px 
+Line Height: 22px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Helper Text 
+
+(Same as Default state) 
+
+
+Tip: Helper Text 
+
+In Focus 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 2px solid #0071B2 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 2px 2px 4px 0px 
+rgba(0, 113, 178, 0.20), -2px 
+-2px 4px 0px rgba(0, 113, 178, 
+0.20) 
+
+Label 
+
+(Same as Default state) 
+
+Input Text (if any) 
+
+(Same as Default state) 
+
+Helper Text 
+
+(Same as Default state) 
+
+
+Error 
+
+Field 
+
+Height: 48px 
+Background: #FFFFFF 
+Border: 2px solid #D0021B 
+Border radius: 2px 
+Padding: 13px, 16px 
+Box-shadow: 2px 2px 4px 0px 
+rgba(208, 2, 27, 0.20), -2px -2px 
+4px 0px rgba(208, 2, 27, 0.20) 
+
+Label 
+
+(Same as Default state) 
+
+Input Text (if any) 
+
+(Same as Default state) 
+
+Error Message Text 
+Text Color: #D0021B 
+Text size: 14px 
+Text line height: 20px 
+
+Spacing of input field & error 
+
+message: 4px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Tip: Helper Text 
+
+Default with Input 
+
+Field 
+
+(Same as Default state) 
+
+Label 
+
+(Same as Default state) 
+
+Input Text (if any) 
+
+Text Color: #303030 
+Text size: 16px 
+Line Height: 22px 
+Typeface: Noto Sans 400 
+(Regular) 
+Justify: Left 
+
+Helper Text 
+
+(Same as Default state) 
+
+
+Header, Footer, & Breadcrumbs 
+
+Header and Footer 
+
+The Panduit.com header and footer contain the global site 
+navigation as well as access to privacy/copyright notices 
+and main contact information. 
+
+The Panduit.com header and footer cannot be altered in 
+
+any way, but the content area can be altered/modified in 
+
+accordance with the digital brand style guidelines. 
+
+Panduit Logo -Trademark vs. Copyright: 
+
+• Panduit.com U.S./Canada site: Use Panduit registered 
+trademark logo 
+• Panduit.com all other Panduit regional websites: Use 
+Panduit TM logo. 
+
+Breadcrumbs 
+
+The breadcrumb component displays the position of the current 
+page within the site hierarchy, allowing visitors to navigate the 
+page hierarchy from their current page location. 
+
+Breadcrumbs are required for every page on Panduit.com. 
+
+
+Header 
+
+Breadcrumbs 
+
+Content Area 
+
+Footer 
+
+
+
+Hyperlinks 
+
+A Text Hyperlink is an element that provides direct access from 
+one page or website to another. When a user hovers over a text 
+hyperlink, the hyperlink text is underlined. The underline color 
+should always match the text color. 
+
+Hyperlink in default state: 
+
+
+Hyperlink in hover state (when the user hovers the mouse 
+over the hyperlink text): 
+
+
+For additional information on hyperlink text color, see: 
+
+Commonly used background colors and text and link color 
+combinations 
+
+For icons to be used with hyperlinks, see: Frequently used 
+icons 
+
+Note: For hyperlink used as a Call-to-Action, see: 
+
+Call-to-Action 
+
+Text Hyperlinks to be: 
+
+• Short, concise and descriptive: The link should be the 
+title/name of the file, or description of what it leads to. 
+
+
+• Don’t make links less then 5 characters long (to avoid 
+making it easy to miss, or hard to click on touch devices), 
+or longer then 60 characters including spaces. 
+
+-For example, instead of: “URL”, the link could be 
+:“{Insert title of page}” 
+
+
+• Avoid the use of generic words by themselves: 
+-Instead of “click here” use “{Insert title of page}” 
+
+
+-Instead of “here”, or “Learn More”, be more 
+descriptive “Learn about our process” 
+
+
+-Instead of “download”, make the name of the file to 
+be downloaded be the link “Download Our Product 
+Catalog” 
+
+
+• Do make all email addresses links, and all phone 
+numbers links in the mobile view. 
+• For links leading to an external page, note it in the 
+link, or add an icon at the end of the link, see: 
+Frequently Used Icons. 
+• For filessuch as PDF or Excel, include the name of the 
+file, the file type, and an icon, (see:Frequently Used 
+Icons.) 
+
+-For example: “ Brochure for Product X (PDF)” 
+
+
+• If its an applet, use the applet extension in the link 
+name itself. (Also, include after the link: what system 
+does it work in, (only Windows, not Mac) etc. and any 
+instructions on how to get it to work.) 
+
+Pages are generally designed on a grid of 12 columns within 
+1100 pixel page width (1140 pixels minus margins). 
+Increments of 4 pixels are used for most of the sizing/ 
+spacing of elements. 
+
+Page Layout Recommendations: 
+
+• Use three or less images/items across the page to avoid 
+making the content appear cramped. 
+• Avoid repeating the same layout section after section: 
+Vary the layout from section to section to give a sense of 
+flow to the page and help orient the user within the 
+
+page. 
+
+• Label each section of the page with a title. 
+• Consider using layout elements to help convey the 
+information hierarchy of the page, for example, a single 
+large element that takes on the full width of the page 
+appears is more prominent compared to three smaller 
+elements across. This layout would imply that the single 
+element is more important vs. the three elements. 
+Authors: For detailed information on the Column Control AEM 
+component layout capabilities refer to: AEM Column Control 
+Component 
+
+
+Continued on next page 
+
+Page Layout 
+
+
+Lack of section 
+headers forces the 
+
+user to figure out 
+
+what the section is 
+about and make 
+navigating the page 
+harder. 
+
+Not enough “white 
+space” between 
+modules or the last 
+module and the 
+footer. 
+
+
+Poor information hierarchy 
+
+(indication of what is most vs. 
+least important) does not help 
+guide the user through the 
+
+content. 
+
+Avoid the “stripe” effect. 
+
+Don’t repeat the same colors, or 
+layout, or module multiple times 
+interchangeably, for example: Don’t 
+stack multiple banners as this will 
+result in a monotonous page 
+layout. 
+
+No guidance on what the user 
+should do next 
+
+Include a clear Call-to-Action, or links to 
+related content the user would likely 
+want to see next. 
+
+
+Page Layout: Column Layout & Spacing 
+
+When several images or page elements are to be shown side-by-side in a row, the following spacing is to be used between them: 
+
+Authors: For detailed information on the Column Control AEM component layout capabilities refer to: AEM Column Control Component . 
+
+Single Image Two Images – 22 pixels spacing 
+
+
+Image can fill the page to the borders 
+
+
+
+Three Images – 22 pixels spacing 
+
+Image with an additional border of 24 pixels within the 
+
+defined margins. 
+
+
+
+Four Images 
+
+Four items shown in a row are not recommended. (This may 
+still occur in older page templates that specify four images/ 
+elements across). Instead: 
+
+
+Place the content in two rows with two items each, or 
+
+
+Choose item of focus and make the corresponding image large 
+with three smaller images/cards below. 
+
+
+Page Title and Banners 
+
+Page titles can be displayed using text, or in a 
+Header Banner or a Two Column Banner. 
+
+Always use the H1 text style for page titles. 
+
+Page titles should be short, unique and closely 
+match breadcrumbs. 
+
+Recommended title text length: under 50 characters 
+including spaces. 
+
+Header Banner Component with page title: Do use simple patterns Two Column Banner used as a page header on the FlexCore 
+For more visual weight or to illustrate the page for the background. Featured Product page. 
+concept titles can be displayed in banners. 
+
+Banners commonly used for titles: 
+
+Header Banner 
+Hero Banner/Two column Banner 
+
+Certain pages use text for titles 
+Two Column Banner used as a page header on the Renewable Energy 
+Solutions page. 
+
+
+
+Radio Buttons 
+
+Radio buttons are used to represent 
+mutually exclusive options and are always 
+used in groups of two or more. 
+
+Use radio buttons when: 
+
+• Only one option can be selected 
+from the choices, and 
+• An option must be selected: choose 
+option A OR B. 
+• Use radio buttons vs. drop-down 
+menu when there are less than five 
+
+options, or when it’s helpful to show 
+all options simultaneously, or if each 
+option requires an explanation (& it 
+
+would not fit in a drop-down field). 
+
+Radio Button Group: 
+
+Choose one the options below: 
+
+
+Default 
+
+Radio Button 
+
+Height/Width: 22px, 22px 
+Touch area: H: 44px 
+Background: #FFFFFF 
+Border: 1px solid #D4D9DF 
+Padding: 12px, 11px, 11px,11px 
+Box-shadow: 0px 2px 4px 0px 
+rgba(0, 0, 0, 0.20) 
+
+Label 
+
+Text color: #303030 
+Text size: 16px 
+Text line height: 22px 
+Typeface: Noto Sans 400 (Regular) 
+Justify: Left 
+
+Hover 
+
+Radio Button 
+
+Height/Width: 22px, 22px 
+Touch area: H: 44px 
+Background: #F5FBFF 
+Border: 1px solid #6198B8 
+Padding: 0px, 12px, 11px,11px 
+Box-shadow: 0px 2px 4px 0px 
+rgba(0, 0, 0, 0.20) 
+
+Label 
+
+(Same as Default state) 
+
+Selected 
+
+Radio Button 
+
+Height/Width: 22px, 22px 
+Touch area: H: 44px 
+Background: #FFFFFF 
+Border: 1px solid #0071B2 
+Padding: 0px, 12px, 11px,11px 
+Box-shadow: 0px 2px 4px rgba(0, 
+73, 118, 0.20) 
+
+Radio 
+
+Height/Width: 12px, 12px 
+Padding: 5px, 5px 
+Background: #0071B2 
+
+Label 
+
+(Same as Default state) 
+
+Disabled 
+
+Radio Button 
+
+Height/Width: 22px, 22px 
+Touch area: H: 44px 
+Background: #E2E8F0 
+Border: 1px solid #94A3B8 
+Padding: 0px, 12px, 11px,11px 
+
+Label 
+Text color: #C0C0C0 
+
+
+
+Page Templates 
+
+
+Panduit.com Page Requirements 
+
+Pages on Panduit.com are for evergreen content - beyond the life 
+of a given time-bound campaign. Additionally, to qualify as a web 
+page: 
+
+• Page content total character count to be at least 
+300 words to rank as a page. See: Search Engine 
+Optimization cable 
+• All pages should have a logical home within the site 
+navigation for ease of findability. 
+• All pages will be indexed so they can be found with 
+either the Panduit.com site search, or by organic search 
+in search engines such as Google. 
+• Placement of the page within the site navigation 
+and the type of template to be used for the new 
+page is determined by the topic and the purpose of 
+the page by the digital team. 
+• Each requested page will be authored using a 
+template if one exists. 
+Panduit.com site navigation 
+
+
+Advantages of Using Page Templates 
+
+Templates are reusable layouts that reduce rework and serve as Pages using the following templates will live under the “All Products” section of the site: 
+a starting point for new pages. 
+
+Advantages of templates: 
+
+• Provide consistency and uniformity across the website 
+across similar page types 
+• Incorporate best practices 
+• Speed-up development time 
+• Increase flexibility – template pages can be tracked and 
+improved more easily to meet changing needs 
+• Let you focus on what is most important- the content 
+How to request a template change, a new template, or a design 
+
+Product Subcategory
+
+request: 
+
+(L3) template 
+
+New templates and changes to existing templates need to be 
+evaluated based on each use case. Please submit an At Your 
+Service (AYS) request to authors, or the Panduit website 
+
+product owner with the specific requirements. A short meeting 
+
+will be set up to review the request in detail and next steps will be 
+
+provided at that time. You can also fill out theDigital Enablement 
+Request Form . 
+
+Product Category 
+(L1) template 
+
+
+Product Detail Page 
+(PDP) template 
+
+
+Featured Product 
+or System 
+template 
+
+
+Home Page 
+
+The Home page template is used only on the Panduit.com 
+home page. 
+
+The Home page consists of the Carousel Banner, Featured 
+Products section and various banners and other highlights in 
+areas of though leadership, partnerships, etc. 
+
+See Also: 
+
+Image Sizes: Home Page 
+
+Carousel Banner 
+
+Carousel 
+Banner 
+
+“Featured 
+Products” 
+
+
+Home page template Panduit.com home page 
+
+
+
+The Markets & Applications form is used to 
+create pages that live under the “Solutions” 
+section of the Panduit.com website. 
+Historically, it has been employed for both 
+Market and Application type pages. 
+
+Market 
+
+Use this template to create a page for a 
+“vertical” sector of the economy. For example: 
+Real estate sector (which has segments such as 
+commercial real estate or industrial real estate.) 
+
+For information on image sizes on these pages 
+see: Images: Markets & Application Pages 
+
+Hotspot Banner 
+
+For the New Application page templates see the 
+following pages. 
+
+
+Market Page 
+
+Markets/Applications 
+page template 
+
+
+Market page 
+
+
+
+Applications (Hub/Parent) 
+
+The goal of the applications hub page is to 
+demonstrate our company’s superiority in 
+this domain compared to competitors. This 
+is achieved by presenting high-level 
+thought leadership content, providing 
+evidence through quotes or statistics, and 
+
+linking to more specific scenarios in 
+
+application sub-pages if warranted. 
+
+For example, “Renewable Energy,” would use 
+
+this template, and link to specific application 
+
+examples such as solar energy, or wind energy. 
+These pages are located within the “Solutions” 
+section of the Panduit.com website. 
+
+For more detailed information on page sections 
+and for image sizes see: 
+
+Application Parent Page Content Guide 
+
+
+Two Column Banner 
+
+Geometric Overlay Image Treatment 
+
+
+Applications page 
+template 
+
+
+Renewable Energy 
+Hub Application 
+
+
+page 
+
+
+Renewable Energy 
+Applications page -mobile 
+
+
+Applications Sub Page 
+
+Application sub-pages are used to show how a 
+group of products work in synergy to solve a 
+
+specific need or problem and how they solve it. 
+
+Think “case study”, or application guide. 
+
+For example, “Solar Energy”, “Industrial 
+Automation Solutions”, or “Data 
+Centers in Harsh Environments” would 
+each be an application which would 
+detail out types of products & systems 
+used in this scenario. 
+
+For more detailed information including image 
+sizes see: 
+
+Application Sub Page Content Guide 
+
+
+Also: 
+
+Two Column Banner 
+
+Geometric Overlay Image Treatment 
+
+Solar Energy 
+Applications Sub 
+Page 
+
+
+Solar Energy Applications Sub page-
+mobile 
+
+Applications Sub 
+page template 
+
+
+
+The Product Category template is used to 
+group similar products into logical 
+overarching categories that can be further 
+segmented into smaller categories. 
+
+Categories are the primary way of 
+classifying items into a taxonomy. 
+
+Product categories are used for fine-tuned 
+
+product organization which is required when 
+adding new parts to the website and used to 
+help users navigate through to a logical 
+product group. 
+
+For example: a “Paint” category would 
+
+include different types of paint, (grouped into 
+lower level, more specific categories such as 
+
+primers, interior paint, exterior paint, etc.) 
+
+The list of Product Category (L1) pages is a 
+high-level business decision which is highly 
+visible to the user and showcases the breadth 
+of the Panduit catalog; adding new Product 
+Category (L1) pages must be carefully 
+considered and agreed upon by all 
+stakeholders. 
+
+See Also: Image Sizes: Product Category 
+(L1) page 
+
+
+Product Category Page (L1) 
+
+
+Product Category (L1) page authored 
+using the Product Category 
+template 
+
+
+Product Category (L1) template 
+
+
+Product subcategory (L3) template is used to 
+show similar product types within a given 
+larger product category. 
+
+Product subcategory should be based around 
+what a product “is” rather than what it does or 
+where it is used, and is intended to group 
+together products which can be described 
+using the same set of attributes. Required for 
+adding parts to the site & used in navigation just 
+like the L1 pages. 
+
+For Example: “Primer Paint” as a subcategory of 
+“Paint”, or “Cable Ties & Wire Ties”; would include 
+all cable ties regardless of the product line and 
+may have several types of cable ties distinct from 
+each other beyond color, material, length, and 
+package quantity. 
+
+Note: This template is not to be used to show 
+variants of one product family, or to show 
+
+otherwise defined product groupings such as 
+
+by a product line, for that grouping see: 
+
+Product/System Overview Template. 
+
+
+Product Subcategory Page (L3) 
+
+
+visitors find this 
+
+
+SEO Optimized 
+content helps 
+
+page on the web 
+
+Product Subcategory (L3) page auto-
+generated from data using the (L3)
+Product Subcategory (L3) template template 
+
+
+
+Featured Product template – Used to educate 
+on the function, options, and accessories of a 
+“Big Bet”/Tier 1 product, or to market products 
+sold in kits. 
+
+Use this template to tell the story of the product 
+and answer common user questions such as: What 
+is it? Where and how to use it? Why is it better than 
+the competitive product? 
+
+This template has the following sections: 
+
+• Banner with product name & tagline 
+• Product overview 
+• Top product differentiators & selling points 
+• How it works 
+• Related markets & applications 
+• Common Configurations (to show that 
+multiple parts are necessary in order to 
+create a complete product (such as a server 
+cabinet that requires a frame, panels, 
+doors, shelves,etc.) 
+• Featured parts 
+• Call-to-Action banner 
+• Featured resources 
+• Contact us banner 
+See Also: Product Hero Image. 
+
+Use the Featured Product or System Page -
+Content Guide for details on each section and 
+complete list of all image sizes. 
+
+
+Featured Product Page 
+
+Two Column Banner 
+
+used to show the 
+product hero image 
+in the page header 
+
+For product systems, 
+the template has an 
+additional “Common 
+
+Configurations”section 
+
+
+
+Featured Product 
+page 
+template 
+
+~ 
+Featured Product Page 
+example with system module 
+
+
+
+Product Detail Page (SKU PDP) 
+
+Product Detail Page currently shows a 
+single variation of a product SKU. 
+
+For Example: a red, nylon 7.40” length 
+cable tie sold in a package of 100. 
+
+
+Product Detail Page auto-
+generated using the 
+
+Product Detail Page (PDP) 
+
+
+Product Detail Page (PDP) 
+
+template 
+
+template 
+
+
+
+Marketo Email 
+& Landing Pages 
+
+
+Marketo Campaigns 
+
+Marketo is a marketing automation platform used to create personalized multi-channel 
+(email and landing page) programs and campaigns to prospects and customers. 
+
+Campaign best practices: 
+
+• Maintain Brand Consistency 
+-Follow brand guidelines for a recognizable look and feel. 
+
+-Repeat message and visual elements across all communications for a 
+seamless and memorable look and feel. 
+
+• Keep Messaging Short and Concise 
+-Respect your audience’s time: Keep all communications short, concise, and to 
+the point. 
+
+• Utilize Storytelling 
+-Incorporate storytelling techniques to create narratives that resonate with 
+your audience on an emotional level. 
+
+-Highlight the benefits of our products or solutions as they relate to the DO: Consistent use of visual 
+audience’s pain points. assets and repeat messaging to 
+tell the story across touch points 
+
+• Personalize for Engagement 
+-Talk to a specific audience, instead of “everyone”. 
+
+• Measure and Optimize 
+-Track campaign performance and metrics beyond click-through rates: 
+measure content engagement. 
+
+-Use data-driven insights and A/B testing to optimize results. 
+
+Social Media Ad 
+
+
+Webinar Registration Page 
+
+
+
+Marketo Email 
+
+
+Email Best Practices 
+
+
+The average person spends nine (9) seconds 
+reading an email - often while multitasking.- 
+2022 Litmus report 
+
+Think of emails as the equivalent of a physical 
+postcard/mailer. Cut through the inbox noise 
+with short, simple emails featuring a single, 
+clear and compelling message: 
+
+• Define key performance indicators 
+(KPI’s) such as click-through rate as well 
+as engagement to measure what is 
+working. 
+
+• Draw the audience in: 
+-Always use an email preheader 
+
+-Keep subject lines short: less then 40 
+characters (including spaces) is best 
+practice, but aim for 15. If truncated, 
+it will probably not be read. 
+
+-Speak to the user’s benefit 
+
+
+DO: Limit and 
+prioritize content 
+relevant to the target 
+audience 
+
+DO: Break text up into 
+smaller “bite size” 
+pieces 
+
+
+DON’T: Try to say 
+everything at once - 
+prioritize content that is 
+most relevant to the 
+target audience 
+
+DON’T: Place copy in 
+large blocks of text 
+
+DON’T: If you 
+need “Back to Top” 
+buttons the email 
+is too long 
+
+DON’T: Use multiple CTA 
+buttons in one email 
+regardless of where the 
+CTAs are located 
+
+
+Email Best Practices Cont. 
+
+• Respect the audience and their time. 
+-Keep email messages bite-sized. Don’t try to say 
+everything in one email. 
+
+-Quick Read: Brake the text up into bullet points. 
+
+• Prioritize message over design. Use visuals to 
+support the message, NOT compete or distract from 
+it. Keep the design on brand. 
+• Actionable Content: Address specific audience pain 
+points and provide clear post-viewing actions 
+-Avoid “dead ends”: Do not link to content in the 
+DAM or embed video in the email - Email is to lead 
+to a destination page or to view a video. 
+
+• One Prominent Call-to-Action: Make the most 
+important intended user action clear and place it 
+front and center 
+-Avoid multiple CTA buttons to prevent confusion 
+
+-Everything in the email should direct attention to 
+this primary action; Otherwise, it is competing 
+with it 
+
+• Test to optimize: 
+-Verify: Test email deliverability by sending an 
+email to yourself and viewing on several platforms 
+
+-Conduct continuous A/B testing on message 
+content and design to optimize. Follow A/B testing 
+best practices. 
+
+DO: One prominent 
+CTA button placed 
+front and center to 
+direct the audience to 
+the next action. 
+
+DO: Address the 
+
+audience pain points 
+
+throughout the 
+
+messaging and the 
+
+email content. 
+
+DO: Image supports 
+the CTA through the 
+image of the voltage 
+tester that looks like a 
+video with the play 
+button: Both the CTA 
+button and the image, 
+when clicked, open a 
+landing page with the 
+video. 
+
+DO: A/B testing - test one 
+variable at a time 
+
+
+Version A: Focus 
+on the solution 
+overview 
+
+
+Version B: Solution 
+overview with two 
+products from the 
+solution 
+
+
+
+Make content easy to take in at-a-glance: 
+
+• Use visuals to enhance, not 
+overshadow, the message. Focus on the 
+message and use imagery to support it 
+- don’t redesign the email template. A 
+well thought-out communication reflects 
+
+Panduit product quality. 
+
+• Stick to brand guidelines for 
+trustworthiness. Don’t confuse the 
+audience with a different look and feel. 
+
+Avoid deviating from brand norms, aim 
+to preserve brand trust and legitimacy 
+
+• Ensure campaign continuity and 
+consistency with both visuals and 
+taglines, etc. See: Telling a Story 
+Through Visual & Message Consistency. 
+• Optimize images for faster load times. 
+• Include alt text for accessibility. 
+• Verify mobile view, browsers, and ADA 
+compliance 
+• Don’t include the Panduit or Partner logo 
+in the image or banner - keep it in the 
+header and footer. 
+Effective Email Design 
+
+
+DO: Create a simple, 
+focused and direct 
+design driving attention 
+to the main action 
+button 
+
+DO: Break text up into 
+smaller “bite size” 
+pieces using bullet 
+points 
+
+DO: Use one CTA 
+button only and use 
+hyperlinks for 
+secondary CTAs only if 
+you must 
+
+DO: Choose an image 
+to complement the 
+message 
+
+
+DON’T: Place important text 
+inside images, it reduces 
+readability and accessibility. 
+
+DON’T: Use a title that lacks 
+visual hierarchy. For example, 
+making it the same size or 
+smaller than the body text on 
+the page. 
+
+DON’T: Use designs that stray 
+from brand standards, even 
+when brand colors are applied, 
+the overall look must still 
+
+reflect a high-quality, premium 
+
+identity. 
+
+DON’T: Let design elements 
+compete with the message. 
+Visuals should guide the eye 
+toward the Call-to-Action (CTA) 
+and reinforce the core 
+message, not distract from it. 
+
+
+Email Elements of Style 
+
+Panduit Marketo emails follow general brand guidelines 
+outlined in this digital brand style guide as well as email best 
+practices and tips on effective email design. 
+
+
+Buttons 
+
+Primary buttons are to be used for the primary Call-to-Action for 
+each email. It is best practice to use one main CTA button per 
+email. Use hyperlinks for any secondary actions or links. 
+
+
+In Marketo, the style of the primary button is limited, but should 
+follow the design of the button used on Panduit.com as closely as 
+possible. For guidelines and additional information including 
+styling. See: 
+
+Buttons 
+Primary Buttons 
+Call-to-Action 
+Hyperlinks 
+
+Color 
+
+Color usage should be followed for consistency of use across 
+digital touch points. See: 
+
+Color 
+ADA Contrast Guidelines 
+
+Icons 
+
+The same icons and icon style should be used across all brand 
+touch points in Marketo as on Panduit.com - this includes social 
+icons and icons such as the chevron, video, PDF. See: 
+
+Application Icons 
+Descriptive Icons 
+
+Images 
+
+See: 
+
+Email Image Style and Sizes 
+
+Email Text Styles 
+
+The text styles used in emails are different from what is used on 
+
+Panduit.com, however the same principles apply. See: 
+
+Email Text Styles 
+ADA Contrast Guidelines 
+
+
+Email Text Styles 
+
+Arial 
+
+Arial Bold 
+
+Arial is used as the primary typeface used in Panduit 
+emails for all Latin based languages in the styles shown on 
+the right. 
+
+Note: Noto Sans is used as the primary typeface on Panduit. 
+com, however for email it is best practice to use a commonly 
+available typeface. 
+
+The same text styles are used across all screen sizes from 
+desktop to mobile. 
+
+Text color 
+
+#0071B2 Active hyperlink color 
+
+#303030 Text color 
+
+Text Style (Large to Small) Weight Size (Px/Em) Line height (Percent/Em) 
+Heading 1 Bold 36px/2.25em 130%/4.25em 
+Heading 2 Bold 30px/ 1.875em 130%/2.5em 
+Heading 3 Bold 24px/1.5em 130%/2em 
+Heading 4 Bold 21px/1.3em 130%/1.75em 
+Heading 5 Bold 18px/1.125em 130%/ 1.5em 
+Heading 6 Bold 14px/0.875em 130%/1.2em 
+Paragraph Large Regular 18px/1.125em 130%/1.5 em 
+Paragraph Regular 16px/1em 140%/1.375em 
+Paragraph (small) Regular 14px/0.875em 130%/1.2em 
+
+
+Email Text Styles - Continued 
+
+Bulleted List 
+
+Break up large chunks of text into bulleted lists so it is 
+easier to take in. 
+
+
+Paragraph 
+
+Use paragraphs sparingly, and keep them short. It is 
+recommended to use bulleted lists instead when 
+possible to succinctly deliver main points of the 
+message. 
+
+Quotes and Statistics Time, Date, and Location 
+
+Use quotes and statistics in emails to draw the audience into the 
+content and establish trust. Quotes add credibility and humanize the 
+message, while statistics provide concrete evidence to support claims. 
+Incorporating these elements helps to engage the audience and 
+
+enhance the effectiveness of the email campaign. 
+
+To make quotes stand out from other text on the page the quoted 
+text (color #002256) is center aligned on a light blue #F4F7FC 
+background. 
+
+Statistics percentage is displayed in a medium blue #193E92. 
+
+
+Statistics Example 
+
+Quotes Example 
+
+Time and Date 
+
+Date Range and Location 
+
+
+
+Table of Contents SEO Checklist Design Elements Components Page Templates MMarakreketoto E Emmaaiill aanndd L Laandnidnign Pga Pgeasges Resources 
+Digital Application Guidelines | 76 
+76 
+Email Header and Footer Brand Rules 
+International Header and Footer use TM after the Panduit logo 
+Light Co-Branded Header 
+Dark Co-Branded Header 
+Note: Only when the partner company provides a white version of 
+their logo 
+[FLEX] EM 
+Partner Webinar Invite V2 
+[FLEX] EM 
+Co-branded Event 
+Panduit Logo 
+For North America, use the Panduit logo with the 
+registered trademark symbol ®. For all other regions 
+use the Panduit logo with the trademark symbol (™) in 
+both header and footer. 
+The Panduit registered trademark logo can 
+only be used for emails going to customers 
+in North America or Canada. 
+Dark Header Example 
+Light Header Example 
+Email Footer 
+Email footer is mid-gray in color to not distract from the contents 
+of the email. For North America, use logo with the registered 
+trademark, for all other regions use the default TM logo in both 
+header and footer. Note footer may vary by region. 
+Use the Panduit trademark logo in all regions 
+Email Header 
+Choice of dark background (Default), or white (see below). 
+~DUil 
+AulDUIT" f X D in @) ~ 
+View as a Webpage I Forward to a Friend Legal Information Privacy Notice Unsubscribe 
+~ou1r ® 2025 Panduit Corp. All Rights Reserved 
+
+Email: Image Sizes and Style 
+
+
+Image Style 
+
+
+To add continuity and cohesiveness to campaigns and the 
+brand, ensure to follow digital image best practices. See: 
+
+Images 
+Image Alternative Text 
+Story Telling Through Visual Consistency 
+
+Main Header Image – Full Width 600px X 220px 
+
+(3.6:1 Aspect Ratio) 
+Two Column Layout for Presenting Logos 
+
+One Column Image – 560px X 220px (5:2 Aspect 
+Ratio) 
+
+
+Article or Presenter Image in Two Column Layout 
+
+
+Email Layout 
+
+42%-60% of users read email on 
+
+One column layout Two column layout - Articles with links 
+
+their phones* - emails using a 
+
+Use a single column layout as it aids reading and Two column layout may be used for presenter information or for links to articles etc. when the text is 
+
+single column layout work for 
+
+works across multiple display sizes. not lengthy. 
+
+both mobile and desktop and 
+make content easy to take in at-a-Image size: 560px by 220px NOTE: When using links with images, add the hyperlink to both the image and the text. Never add the 
+glance*. hyperlink to the image only. 
+
+Image size: 270px by 200px 
+
+*According to both: Audiencepoint 
+and Porchgroup Media 
+2024 Report 
+
+One Column Layout 
+
+
+Two Column Layout - Presenters 
+
+
+Two Column Layout – Articles with Links 
+
+
+
+The goal of the product drip campaign is to 
+deliver a memorable value-add story. 
+
+Focus on marketing the product benefits not 
+
+the product assets: 
+
+• Address target audience pain points 
+throughout the campaign. 
+• Don’t send emails for every piece of 
+content. Use videos, case studies, and 
+white papers to help tell the story. For 
+example, send an email with a link to a 
+product introduction video, followed 
+with an email focusing on a specific 
+
+pain point of the target audience with a 
+quote taken from the brochure instead 
+of an email containing a link to the 
+product brochure. 
+
+• Resend the same email with a tweaked 
+subject line to non-interacting 
+recipients. Studies prove repeated 
+exposure or different timing can boost 
+
+engagement. 
+
+Email: Product Drip Campaign 
+
+Product Preview 
+
+
+Product Launch 
+
+
+Repeat the 
+campaign or 
+the product 
+tagline 
+
+Utilize bullet 
+points for 
+easier 
+reading 
+
+If cost is a pain 
+point, address it in 
+the campaign. 
+Using a tool such 
+as the ROI 
+Calculator to 
+enable the 
+audience to see 
+proof of the ROI 
+for themselves is a 
+much more 
+powerful way to 
+tell the product 
+story then just 
+stating the 
+
+benefit. 
+
+
+Email: Thought Leadership Content 
+
+Thought Leadership content emails 
+should entice - not say everything 
+
+Establish Trust 
+
+Use quotes and statistics to establish trust 
+and grab attention. 
+
+Single Call-to-Action 
+
+Follow with a single call-to-action button, 
+directing readers to content. If content is 
+
+gated, prompt users to fill out the form. 
+
+
+Keep it Short 
+
+This is a high level summary with the goal of 
+getting the user to click through to the 
+actual content whether gated or not. 
+
+
+Co-Branded Email: Blog Post 
+
+
+Link to same 
+page as the 
+CTA button 
+(use for 
+non-gated 
+content) 
+
+Indicating 
+time to read 
+may help get 
+the user to 
+engage 
+Highlight a 
+relevant 
+statistic or 
+quote 
+
+Single CTA 
+
+Partnership 
+Solutions Email with 
+Link to Video 
+
+
+Summarize the 
+problem and 
+the outcome - 
+have the 
+reader click to 
+learn the 
+details of the 
+solution 
+
+Both button 
+and image 
+link to 
+
+
+White Paper - 
+
+landing page Gated Content 
+with video 
+
+White Paper 
+
+
+Email: Event & Webinar 
+
+
+Include benefit-focused 
+
+headings and body copy to 
+
+emphasize the value 
+proposition and encourage 
+attendance. 
+
+Incorporate compelling 
+images and visuals, where 
+applicable, to grab attention 
+and enhance engagement. 
+
+Co-Branded Event 
+
+Send a series of emails and reminders After the event, send a follow-up email with links to relevant 
+leading up to the event to ensure it is not content or resources discussed during the event. This helps to 
+missed. Use these emails to gradually build extend the engagement and provides value to attendees even 
+anticipation and reinforce key messages. after the event has concluded. 
+
+Webinar Follow-Up 
+
+
+Link to 
+relevant 
+content 
+
+Webinar with Agenda 
+
+
+
+Email Style Example: Newsletter 
+
+According to a Boomerang study the ideal 
+length of a newsletter is 50 to 125 words. This 
+resulted in response rates of over 50%. 
+
+Use Segmentation to Personalize Content 
+
+Rather than sending the same content to every one 
+of your subscribers, segment your list and send 
+relevant stories to each segment. 
+
+Focus on Benefits 
+
+
+In order to get people to click-through from your 
+newsletter email, you need to tell them exactly 
+
+what benefit they are going to get from doing so. 
+
+
+Break Information Into Chunks 
+
+People don’t read emails left to right like a book, 
+but instead, skim over them looking for things of 
+interest. 
+
+• Includeshort,benefit-focusedheadings 
+and body copy for each content piece 
+• Add compelling images & visuals for each 
+piece of content. 
+Indicate how long 
+it will take to read 
+
+Single Call-to-
+Action button for 
+the featured 
+article 
+
+Newsletter: Desktop 
+
+
+Limit to 2-4 
+additional article 
+links relevant to 
+topic and target 
+audience 
+
+Newsletter: Mobile 
+
+
+
+Email Style Example: Solution 
+
+When crafting solution-focused 
+emails, keep it simple, short, and 
+succinct. Break larger solutions into 
+
+elCar 
+
+bite size “mini-solution” emails and 
+
+information 
+
+send a series over time or use 
+
+hierarchy
+
+segmentation to target to specific 
+
+audiences. 
+
+• Understand your audience: 
+Imagery
+
+Tailor your message to address 
+
+showing
+
+the specific pain points, needs, 
+
+benefits 
+
+
+and interests of your target 
+audience. Highlight 
+
+If you show
+
+benefits
+
+• Highlight benefits:Clearly 
+Break copy into products from the 
+
+articulate the benefits and value 
+
+smaller “bite size” solution, do not 
+
+proposition of your solution, 
+
+
+pieces and use show more then a 
+
+focusing on how it addresses the 
+
+bullet points to aid preview of a couple 
+
+recipient’s challenges or 
+
+with content of them so the user 
+
+improves their business and 
+
+scanability clicks through to 
+
+provide evidence by referencing 
+
+learn about the full 
+
+case studies or testimonials to 
+
+solution 
+
+build trust. 
+
+Product Solutions - Lead to Landing 
+Page to View Details 
+
+
+Product Solutions - Product Preview 
+
+
+
+Table of Contents SEO Checklist Design Elements Components Page Templates MMarakreketoto E Emmaaiill aanndd L Laandnidnign Pga Pgeasges Resources 
+Digital Application Guidelines | 84 
+84 
+Content V2 
+Content V1 
+Thought Leadership Content Templates 
+[FLEX] EM - Case Study V2 
+[FLEX] EM 
+Case Study V2 
+7 
+[FLEX] 
+EM - Content 
+4 
+[FLEX] 
+EM - Case Study 
+6 
+[FLEX] EM 
+Solutions 
+Layout 
+8 
+[FLEX] 
+EM - Content V2 
+5 
+[FLEX] EM 
+Solutions 
+Layout V2 
+9 
+[FLEX] EM 
+White Paper 
+10 
+[FLEX] EM 
+White Paper V2 
+11 
+Case Study V1 Solutions V1 
+White Paper V1 
+Case Study V2 Solutions V2 
+White Paper V2 
+Note: To view full list of available templates 
+see: Marketo Email Layouts . 
+-~, ..... 
+600 X 220 
+(H1) Title: User Benefit of 
+Reading the Content 
+Tag line fOI'" content If applk:llble (optlonal) 
+Benefit to user of reading the content 
+L.otern lpsum dolor sl am8l. CORHClelU" ac:lplldng eM. sad do 
+aluamodtempOrlnddldUnlU11aboreetdolorall"la!1"llallqua. Ulenlm 
+9dminlmveniam.quilnostrudeJu1rcitationullamcolabortsnislut 
+aliquip8l<eaC001modoconsequat 
+"Relevant quote from the white paper/case 
+study or from relatad report or industry expert 
+goes here" 
+Benefit to user of reading the content. 
+FR1mt,e.-.yn;lu.trytoc;om~ ■ndeveryltr,glnbetween,1Mm 
+hawtoclay'1 !8Cl'lnOlogyi&enabling111enex1generalionolkdout 
+-· 
+•lnaeasedProductMty 
+0 SimplifiedPI0088SwtthRellableResulls 
+0 Nelwofkconnectivity;lnltiatelhe18stfromnullpialooeljon1 
++ Flui,lepowaroptiona 0 axpandadnotinga 
+(H2 center) Read the <<Title of 
+Content>> To Find Out How These 
+Results Can Be Achieved. 
+E·hl:MJ ·lh 
+IMDUIT 
+(H1) Title: User Benefit of 
+Reading the Content 
+TagHne for content If applicable (optlonal) 
+600 X 220 
+Benefit to user of reading the content. 
+Loremipsumdolora~emet.eonseetetur &lil)ilcingelit,seddo 
+elusmod temper lncldldunt ut labore et dolore magna allqua. Ut ensTI 
+admlnlm venlam , qulsnostrudexercltalion ullamc:o laborisnlsiut 
+eliquip ex ea eommodo eonseql.191 
+"Relevant quote from the white paper/case 
+study or from related report or Industry expert 
+goes here" 
+-CNHlnduetrialGn:>.ip 
+Benefit to user of reading the contenL 
+From heavy industry to commereillll Md evetythirlg in belween, leam 
+howtoday'stechnologylsenabllnglhenextgeneralion oflockout ·-• lncre.isedProduclMly 
+• SlmplfledProoesswllhRellableResults 
+• Networt.eonneclivlty: lnltiale lhete!111rommultipleloeations 
+• Fluiblepoweroptions - expandedraUngs 
+(H2 center) Read the «TIiie of 
+Content>> To Find Out How These 
+Results Can Be Achieved. 
+Mi-ii::i:191-IM 
+AYIIIUIT" 
+600 X 220 
+H1 : lveco/CNH Industrial Group 
+Challenges 
+HS(Pllra,gnph tpaclna: U): S-.-yottMcaNsllldy: 
+S.nt.nc:.wllhhlghi.v.llntroductlon. 
+Em■ I P■r■gr■phl■rg e: GMl ■ qulck<M1rvlewoltheoomp■ nytype. 
+location, lllze, lndllttry and CMINlewofttie challenge hef9. Mak9 this 
+■paragnpt,orusebulet poi'lt& Thlnk-...Wlnlonnalionwouldellllce 
+.-ers 10-n110 1u mrncn,. 
+"Panduit hetped identify opportunities for us 
+to improve the cost while enhancing 
+porfonnance. This has allowed us to showcase 
+our Eurocargo truck with confidence. We 100« 
+forward to more opportunities with Pandutt." 
+Th. .o..,f..t,l...,t, .-.- •-: ....,_, ___ __ 
+, _..,.or.,. _ or_POUo.,., Clooo - . 
+_..,.or.,.~or - POUoon11C1ooo-- 
+(H2 center aligned) Read the "Title of 
+the Case Study" To Find Out How Such 
+Efficiency and Compliance Can Be 
+Achieved. -- ....... 
+"'-DUil 
+The Power of Partnerships 
+Noose Yogurt Helplng a Manufacturer Grow with 
+ScalabJe Network Sollltk>ns 
+The Challenge 
+lvecolCNH Industrial Group needed ID quickly modify a.Jmtnl truck 
+designs ID comply with the Euro 6 stsndard, which defines .... 
+Approach 
+lvecolCNH lnduslriel Group needed to quickly modify a.Jrrent truck 
+designslDeomplywllh lheEuro6standard, whlchdeflneslhe 
+eooeplablelimitsforexhaustemissions. 
+Outcome 
+Tllenll1tthebenentsg,1ntc1: 
+•Sustainabilityisamainloc:u1fordatacenteroperator1 
+• Advantageaof thelntegration ofPandull lPOUaandClsc:oNexus --"' • MvantagesofthelntegrationofPandult lPOUsendCisc:oNexus -- 
+Learn How Panduit Helped Noosa 
+Yogurt Achieve and Surpass Their 
+Goal. 
+M-thl·hE 
+AYIDUIT. 
+The Next Generation of 
+Electrical Lockout Tagout 
+H4: Safer. Smarter. More Efficient. 
+H3: Copy describing the user benefits of given 
+solution ... Lead the way with prevention 
+through design: 
+• Improve Safety & Risk Reduction 
+• Increase Productivity 
+• Simplify Process with Reliable Results 
+E1i#if!@N 
+H3: Featured products In this solution: 
+VeriS,1,1.0AVT, 8' V.rls.t.2.0Network 
+(Um) 1ystem ,:,bit, Module, Comp,tl)le 
+10' {3ml ■ensor laada with Verls.t. 2.0 A.VT 
+AlilDUIT X fin :'t. a @ 
+""'QUIT 
+The Next Generation of 
+Electrical Lockout Tagout 
+Safer. Smarter. More Efficient. 
+600 X 220 
+Copy describing the user benefits of given solution ... Lead the 
+way with prevention tt,rough design: 
+• Improve Safety & Risi< Reduction 
+• Increase Productivity 
+• Simplify Process wtth Reliable Resutts 
+Featured products in this solution: 
+t::IIEa 
+~ 
+1a13m\111D11Xlo11!11> 
+YndSe!n?0Hrzlwlrt M011ill1 Anl119Wt 
+w!lbY!ri$eh!ZOAYI> 
+E@HMN 
+Alillau,r x ,1n ~ • 
+The Next Generation Of 
+Electrical Lockout Tagout 
+Safer. Smarter. More Efficient 
+Summary of the White Paper: Quick overview of the company 
+type, Jocatfon, size, Industry and overvJew of the challenge. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sad do 
+eiusmod tempor lncldldunt ut labore et dolore magna allqua. Ut enlm 
+ad minim veniam, quis nostrud exercilalioo ullamco laboris nisi ut 
+aliquip ex ea commodo consequat 
+"Relevant quote from the white paper or from 
+related report or industry expert goes here" 
+- CNHlndustrial Group 
+Innovation in electrfcal safety: 
+From heavy industry lo oommercial and eve,ything in between, learn 
+how today's technology Is enabling the next generalloo of lockout 
+tagout 
+• Increased Productivity 
+• Simplified Process with Reliable Results 
+• Network connectivity: Initiate the test from multiple locaUons 
+• Flexible power oplloos • expanded ratings 
+(H2 center aligned) Read the "Title of the White 
+Paper" To Find Out How Such Efficiency and 
+Compliance Can Be Achieved. 
+Ffoli:lii&H 1¥ 
+Aolaurr· 
+The Next Generation Of 
+Electrical Lockout Tagout 
+Upgrading Speed and Environmental Capabiltties 
+Sminread 
+600 X 220 
+lveco Challange 
+lveco/CNH Industrial Group needed to quickly modify cum1nt truck 
+designs lo oomply with the Euro 6 standard, which defines ... 
+Approach 
+lveoo/CNH Industrial Group needed to quickly modify current truck 
+designs lo comply with the Euro 6 standard, which defines the 
+acceptable limits for exhaust emissioos. 
+" Panduit helped identify opportunities for us to 
+improve productivity and lower installed cost 
+while enhancing performance. This has allowed 
+us to showcase our new Eruocargo truck wtt:h 
+confidence. We look forward to more 
+opportunities with Panduit." 
+- CNHlndustrlal Group 
+Outcome 
+Pandult helped to ,chlave this goal and: 
+•lncreasedproductivity intheplant 
+• Improved assembly line efficiency 
+• Completed in 30% less Ume 
+Learn How Pandult Helped lveco/CNH Industrial 
+Group Achieve and Surpass Their Goal. 
+EMHMifM 
+X f In !\ a @I 
+
+Table of Contents SEO Checklist Design Elements Components Page Templates MMarakreketoto E Emmaaiill aanndd L Laandnidnign Pga Pgeasges Resources 
+Digital Application Guidelines | 85 
+85 
+Event & Webinar Templates 
+[FLEX] 
+EM - Tradeshow Invite 
+24 
+[FLEX] EM 
+Webinar Invite 
+44 
+[FLEX] EM 
+Tradeshow 
+Follow-up Booth 
+28 
+[FLEX] EM 
+Webinar - Confirmation 
+46 
+[FLEX] EM 
+Tradeshow Invite V2 
+25 
+[FLEX] EM 
+Webinar Invite V2 
+45 
+[FLEX] EM 
+Tradeshow 
+Follow-up Booth V2 
+29 
+[FLEX] 
+EM - Webinar 
+Confirmation V2 
+47 
+Tradeshow 
+Follow-up Booth V1 
+Webinar - 
+Tradeshow Confirmation V1 
+Follow-up Booth V2 
+Webinar - 
+Confirmation V2 
+Tradeshow Invite V1 Webinar Invite V1 
+Tradeshow Invite V2 
+Webinar Invite V2 
+Note: To view full list of available templates 
+see: Marketo Email Layouts . 
+~:.t1M•• 
+600 X 220 
+(H3b) Event Type, For Example: X Fair 
+(H1) [[Name of Event, Example: 
+Network Infrastructure 
+Connections ]I 
+(H4)[[0,,tt(s):Nov,mber18-21,2024ll 
+OLoeatlon Nsme: Marriott Chleago !Chicago, IL II 
+(l-kRogula,)DGNOtiog:HiAleksal'ldn1,D 
+Thitllevritl] ll)Jsta ,._,....awey.Tllkea.tven11Q1oltl'llsOl'lc:.+ 
+yeeropportUnltytod-somerryweystomake~mlW!Con)'OtW 
+Mh ... ,lhehd"'1tyandll,-world.Tl"oJlh-day..,.n1~y,:oi 
+acceutolndlll1ryexperllwho'Mllaharethalrpe19~onlnduatry 
+challenges and oalrtk>r-.d'Mng bu,..._mmy, 
+• Lis11heberoelborkeyleamk)gpolra 
+•Lil11hebe,-orkey~polnlll 
+• Lil11hebenotborkey'-nlngpolnlll 
+(H2) Join Us Live To Learn About: 
+(H4ReglAar)Thebel1efitsof: 
+• Llstlhabenefitsorkeylaamlngpolnts 
+• Llslthebeneftts«keylaamingpolnts 
+• Llstthebenefltsorksyleamlngpolnts 
+(H2 Center Aligned) Register To Attend 
+on [[Day of the Week]], [{Month, Day, 
+Time, Time Zone]) 
+ff·/· 
+.... ...,.. 
+Allaourr 
+(H1) [[Name of Event, Example: 
+Network Infrastructure 
+Connections ]I 
+(H6:16124j)bc)Evellll',1>e.FOl'Eltampl&:XRoMIIIOW 
+(H3b) « Date(s): November 18-21, 2024 
+«Location Name: Marriott Chicago I Chicago, 
+IL» 
+(H4Regular)l[Greetlng: HIAleksandra,]] 
+Thel[eventDisJustafewweek:s8WIIY. Tekeadvantageofthisor,o.a. 
+year opportunity 1o dlsawer so many ways to maka your mark on your 
+businen, lhe industl'y and the wortd . This three day event gives )'DU 
+accasstolndustryaxpertswhowlllsharelhelrperspecllveonlndustry 
+challenge5and5DlutionsdriYingbusi118S$toclay· 
+• Listthebenefits«keyleemingpoints 
+• Listthabenefitsot keylaemlngpoints 
+• Listthabenafi\sot keylaemlng points 
+(H2) Join Us Live To Learn About: 
+(H4 Regular) The b8o8llts ot 
+• Listthabenafitsotkeylaemlngpoints 
+• U&tthabenefttsotkeyleamingpoints 
+• Ust Iha benaflls « key laemSlg points 
+Register To Attend on Friday, 
+December 13th, 2-Spm 
+-+Hi-iii 
+600 X 220 
+Rutaurr 
+l:i'lrt,;•- 
+600 X 220 
+(H1) Thank You for Visiting the 
+Panduit Booth at: [[Name of 
+Event)] 
+Thorl<.youb-'"'IJirllloln\JallhePa'lll"l-atnopb.W.._hl 
+con,.,rulionoyouhl<l_._..,,,___ror,.... 
+- · 
+H2: Related Solutions 
+- 
+H, ... ln.(H4)Ufllhtn 
+100clla1Ktefs ...,..,. ........ ___ ....... _...,._,.l;Hi;f,I 
+--O<p,cdu<t.f<N" _, •.... - ~--- 
+- 
+H ... ,M(H<) ... ,.ffl 
+100clla1Ktefs ...,..,. ........ ___ ....... _.,._,~lgl,I 
+--O<p,cdu<t.fot _, •.... - ~--- 
+(H2 Center aligned) Explore All Related 
+Content 
++n-1 M 
+IMDIIIT" 
+(H1) Thank You for Visiting the 
+Panduit Booth at: ([Name of 
+Event)] 
+600 X 220 
+Thancyoulor~atNl'aolclulli,o,matl ......... W.110PeN 
+_.....,,..youhod...,,.,l~--11:,rycu 
+H2: Related Solutions 
+- 
+..... ,M(H<)UU""" 
+100cheracteft 
+~_ .-. .,-_.-.,.-_,N-g-/'l-llgllt 
+--o,Pl'WuC(. FCN" 
+-..-plo; ". ............... - .... 
+- 
+....., M(H<)UU. """ 
+100cheracteft 
+~_ .-. .,-_.-.,.-_,N-g-/'l-llgllt 
+__ .,_for 
+--,,plo;". ............... - .... 
+c"lflPiiPddlMICoerdiillPfD?> 
+(H2 Center aligned) Explore All Related 
+Content 
+H 4· 1H 
+~-- 600x 220 
+How to Modemlze Control Panel 
+Designs 
+(IM) UO.-,ol SulrllllilD 
+H2: EventDetalls 
+-0 
+The([--.tD IIJuatal'ew_k:a_y.Tlke.avantageof 
+w._,,....~tod"'°°""IOmany wayslO 
+fl'llkeyo..-monconyourblllolMO,INlh3utllyanCl111e 
+-1<1.Thllevent~you-lOlncl..-,Y~- 
+~-tt,e~~onlndus:ry ___ _ 
+-~--lO<lay:>> 
+(H2) Join Us Live To Learn About: 
+(IMReglNr)Thebenolltld: 
+• LIIIINl-ctltaylNffW'llpol,ts 
+•UrllhO-ctlorylMffW'llpol,ts 
+• Llrl.ttle-ctltay"'"".-.iiPolmt 
+H2: Presented By (optional) 
+_■_ ■ ... __ -~- ... -... -~-.... --~... -~--.... 
+(H2 C8fl1:1r Aligned) Register To Attend 
+on [[Day of the Weeki], [IMonth, Day, 
+Time, Time ZoneJJ 
+Learn to Modernize Your Control 
+Panel Designs 
+September 10th, 202418:00 am CTS 
+F'affGln._E2Eeat11ioglnlmtnltl:uhtaokltion""' ~ 
+~ lheomaU.,.1Cn,gory&o...,..lnlhemlllb1for 
+-.data.-PcweroverEtl>emet 
+What You'll Leam 
+Beneflt1ofAttendlngWeblna" 
+We"l alloh,..ePanikit"slateatconnec:tMtyaokltion. lh• llllll..BlAilll 
+~Dillli~,olong"11he11blllmanagtmont,jll,;b,~ 
+Beneflt1ofAttendln9Weblna" 
+We"l also1WvePar.dlit"t lateatoonr.ectivi1ytoMion,lhe llllll..Baailll.. 
+Ne!Mrt MIPrflll znns1ND along "1111 callle ....._.,OIi!, )e,;b. pstch 
+conls&panell....irno,.. 
+EventD1tall1 
+0 l:l 
+600 X 220 
+Awourr 
+600 X 220 
+Hl: Live Weblnar: 
+(H1) You Have Successfully 
+Registered for: [[Name of 
+Webinar]] 
+(H4)[10ptlonalSubtlt11D 
+H2: Live Streaming Weblnar 
+0 
+(Hl)llmo/Dat. -= 
+~ 
+(H2) Join Us Live To Learn About: 
+(H4Ragular)Thebenafltsof: 
+• Llstlhebenefltsor keyleamSlgpoints 
+• llstlhebenefltsorkey leamlng points 
+•listlhabenefltsorkeyleamlngpoints 
+Ha\Na.-tlono,? Sendalquaotione,oamman1aandl'eadbadr.to 
+llfm;tl!ertlmv@PRndl!HWIDil 
+(H2 Center Aligned) Register To Attend 
+on I(Day of the Week]], [[Month, Day, 
+Time, Time Zone]] 
+E'-.Pfrii'M 
+JlwaUff· 
+Hl: Live Webinar: 
+(H1) You Have Successfully 
+Registered for: [[Name of 
+Weblnar]J 
+(H4) ((Optlonaj Subtltllll 
+600 X 220 
+H2: Live Streaming Webinar 
+0 l;l 
+(H2) Join Us Live To Learn About: 
+(H4 Rogular) The bonefits of: 
+• Ustlhebenelltsorkeyleamlngpolnts 
+• Listlhe benefitsorkeyleamingpoints 
+• Ustlhe benelltsorkeyleamlngpolnts 
+HaveQuHllo,.? Sen:ld""'"1ions,oamrrentaand faecl:>ackto: 
+-""""""" 
+(H2 Center Aligned) Register To Attend 
+on [[Day of the Week)), [[Month, Oay, 
+Time, Time Zone]] 
+E'·..P.!ii&M 
+
+Table of Contents SEO Checklist Design Elements Components Page Templates MMarakreketoto E Emmaaiill aanndd L Laandnidnign Pga Pgeasges Resources 
+Digital Application Guidelines | 86 
+86 
+Co-Branded Templates 
+[FLEX] EM 
+Co-branded Event 
+59 
+[FLEX] EM 
+Partner Webinar 
+Invite Reminder 
+63 
+[FLEX] EM 
+Partner Webinar Invite 
+61 
+[FLEX] EM 
+Partner Webinar 
+Registrants 
+Reminder 
+65 
+[FLEX] 
+EM - Co-branded 
+Event V2 
+60 
+[FLEX] EM 
+Partner Webinar 
+Invite Reminder V2 
+64 
+[FLEX] EM 
+Partner Webinar Invite V2 
+62 
+[FLEX] EM 
+Partner Webinar 
+Registrants 
+Reminder V2 
+66 
+Partner Webinar 
+Invite V1 
+Partner Webinar 
+Registrants 
+Reminder V1 
+Partner Webinar 
+Invite V2 
+Partner Webinar 
+Registrants 
+Reminder V2 
+Co-branded Event V1 Partner Webinar 
+Invite Reminder V1 
+Co-branded Event V2 
+Partner Webinar 
+Invite Reminder V2 
+Note: To view full list of available templates 
+see: Marketo Email Layouts . 
+Alillau11· 
+600 X 220 
+H3: Live Webinar: 
+How to Modernize Control Panel 
+Designs 
+H2: Event Details 
+Hfl: Hll11hlnel1M1rvl-ofl:M..,.nL ElJune25th,2020 
+11:00AMCST 
+q 100Pandult0rtve 
+Apt.Nooiber 
+Tllleyf>IW1< 1L604ll7 
+""' 
+H3: Benefit of Attending Webinar 
+Highlight from Ille weblnar ... What WIii lhey (181 out of attending? 
+H3: Benefit of Attending Webinar 
+Hlghllghtfromllleweblnar ... oracouplesentences,orbulletpolntsof 
+whatlheaudience willgatoutofettending. 
+(H2 enter aligned) Register Now To Save Your 
+Spot 
+MWII: 
+Alillau11· 
+H3: Live Weblnar: 
+How to Modernize Control Panel 
+Designs 
+600 X 220 
+H2: Event Details 
+H6:Hlghlelfllovervlewottheev,nL 
+Lnsth,n100charactets. EI June25th,2020 
+8:00AMCST 
+9 100Pandu1tOl"lve 
+Apt.Number 
+1lnleyPartlL80487 
+USA 
+M·l+l\HM 
+H3: Benefit of Attending Webinar 
+Highlight from lhe webinar ... What will they get out of attending? 
+H3: Benefit of Attending Weblnar 
+Highlight fromlhewebinar ... oracouplasentences,orbulletpointsof 
+whatlheaudiencewillgetoutofattending. 
+(H2 enter aligned) Register Now To Save Your 
+Spot 
+""'•••r X f in "' D @I 
+... ""'. 
+600 X 220 
+H3b: Live Webinar: 
+(H1) [[Name of Weblnar)) 
+(Hl) l(Optlonal SubtltleD 
+H2: Event Details 
+0 l"."I -- Deceoll>er4fl 
+(HI Regular) l(GreeUng: HI Aleksllndra,I] 
+The [I event Dis just a few weeks away. Take advantage of 
+lhlsone&-a-yellfopportunitytodlscoversomenywaysto 
+makeyourlllaJkonyourbusiness,lheindustryandlhe 
+WOl"ld. lNs event gives you aCOBS8 to Industry experts 'Mlo 
+wlllsharalhelrperspectlveonlndustrychellanges11nd 
+solutionsdrivingbusinesstoday:D 
+{H2} Join us Uva to learn about: 
+{H4 Regular) The benefits of: 
+•Llstlhebenefitsorkeyleamlngpolnts 
+• Lls11hebenefltsorkeyleamingpoints 
+• Llstlhebenefltsorkeyleamlngpolnts 
+H2: Presented By (Optional) 
+■■ 
+Expert Name 1 Expert Name 2 
+~~-ncl~O.,...,..,.,.-., _"'_..._ .... c1_,...,ney 
+-lwOlnMcl- IOMl--cl!Oxl 
+(H2 Center Aligned) Register To Attend 
+[[Day of the Week)), [[Month, Day, 
+Time, Time Zone]] 
+M ·il-'i 
+IIMDUrr· 
+~DUTT '"" 
+H3b: Live Weblnar: 
+(H1) [[Name of Webinar)) 
+(HI) [IOptlooal Subthlell 
+600 X 220 
+H2: Event Oetalls 
+0 t'I 
+(H4 Regular) [(Greeting: HIAl&ksandra,D 
+TtlB [leventDl6Justafewwe&k:s11way.Takaedvan~of 
+lhlsonce-a-yeeropportunltytodlscoversomenywa-pto 
+makeyotwmertonyourbusll'IBSS,lhe lndustry andlhe 
+wor1d.Thlseventg1Yesyouaccesstoindustryexpertswho 
+wilsharelheirpersp&etiveonindustl'yctlallengesand 
+solutlonsdrivingbuslnesstodey:D 
+(H2) Join us live to learn about: 
+(H4Roguler)Thobonoftlsof: 
+• Ustlheben&fitsorkeyleemlngpolnts 
+• Llslthebenelilsorkeyleamingpoints 
+• Ustlheben&fitsorkeyleamlngpolnts 
+H2: Presented By {Optional} 
+■■ 
+Expert Name 1 Expert N1ma 2 
+a.-,,1~ . ... ~-pllOnond 
+•-cl--rrw, -"'--•may 
+IOM>two-cltul -!WO-cltul 
+(H2 Center Aligned) Register To Attend 
+l[Day of the Week][, l[Month, Day, 
+Time, Time Zone]] 
+-1.jjj- 
+......... 
+600 X 220 
+H3b: live Weblnar: 
+(H1) Save Your Spot For: [[Name 
+ofWeblnar)) 
+(Hl) QOptlonal !WltltieD 
+H2: Event Details • _,o. 
+e.,,0,10.,, 
+t'I 
+(H4Regulsr)(IGreeting:HIAlekHndra,D 
+ll 
+Thell-lD l1Juste few-ksewey. Tske8dllanlageof 
+ltaonce+yearopp,rtunitybdiscovarsomanyw■ ysto 
+makoyourmartonyourbusinoss,lhelodustryendthe 
+wO!ld. Thlseventglves ~8COilnto lndustlyexpertswho 
+willshan!ltheirpanipectiw,onin<t.Jsttychlll■ ngasand 
+solutionsdfMngbuslnesslodey.D 
+(H2) Join us live to learn about: 
+(H<IRegular); 
+• Ustthebenonts 011keyleamlngpolnts 
+• Ustt11ebeneftts011keyleamhgpolnts 
+• listlhebenafll&OllkeylNmhgpolnts 
+(H2 Center Aligned) Register To Attend 
+[!Day of the Week)], [(Month, Day, 
+Time, Time ZoneD 
+Mfl. "" 
+....... 
+Rllloun • 
+(H1) Save Your Spot For: [(Name 
+ofWeblnar]) 
+(IM)~ll<I-D 
+600 X 220 
+H2: Event Detalls 
+0 !l 
+TI-.lleventDillultafew-.....b_,..Tllke_.,.of 
+~Ol'lll9+yellr_,.,.,ity10d.-.:>man-,wap10 
+m1Ml)'OtJ"m-" m )'OtJ"bus.._, 1he lndl.-.yend h 
+wona.Tllil-gi-)'011...,..tonGJl!ry""P"fll"""' 
+wloh .. thelt~mlnctustryct.llengasena 
+ec1-.a,Mng-toc1ay.D 
+(H2) Join us llve to leam about: 
+(IMRagulot)• 
+• Lilthbeneftllork.eylea-rir,gpoira 
+• Lilt1hel>lil>eftlsorkey~poira 
+• Lilt1hebeneftllorQYNnngpoira 
+(H2 Center Aligned) RegfsterTo Attend 
+([Day of the WeekD, (IMonth, Day, 
+Time, Time Zone]J 
+600 X 220 
+H3b: Uve Weblnar: 
+(H1) X Time Remaining Till: 
+[[Name of Webinar]] 
+(H4) [[Optional Subtldel Weblnu ID: XXXX]] 
+H2: Event Details 
+So,ptember10. 
+(H2) Join us live to learn about: 
+(H4 Ragular): 
+• Lislthebenefitsor key leemingpoinls 
+• Listthebenefitsor key leamingpoints 
+• List thebenefitsorkey leamingpoints 
+(H2 Center Aligned) Register To Attend 
+([Day of the Week)), l(Month, Day, 
+Time, Time Zone)] 
+H3b: Live Weblnar: 
+(H1) X Time Remaining Till: 
+[[Name of Webinar]] 
+(H4) (IOptlonal Subtitle/ Weblnar ID: XXXXD 
+600 X 220 
+H2: Event Details 
+Seplember10. 
+l:l 
+OUratlon 
+45mil'IUleS 
+(H2) Join us live to learn about: 
+(H4 Regular): 
+• List the benefits or key learning points 
+• List the benefits or key lea ming points 
+• List the benefits or key leamlng points 
+(H2 Center Aligned) Register To Attend 
+[(Day of the Week)), [[Month, Day, 
+Time, Time Zone)] 
+Aliluu,r 
+
+Marketo Landing Pages 
+
+
+Landing Pages are used in time-bound marketing 
+
+campaigns. To be effective, they have to be: 
+
+
+• Focused 
+-A landing page is a standalone web 
+page with a single focus: It is built 
+
+around a specific product, target 
+audience segment, promotion, and/ 
+or to address a single pain point the 
+target audience is facing. 
+
+• Time Bound 
+-Landing pages are NOT evergreen, 
+they live for the duration of the 
+campaign. 
+
+• Have a Specific Conversion Goal 
+-The design elements reflect this: 
+Effective design is streamlined to 
+
+eliminate distractions and ensure 
+visitors hone in on what’s most 
+important: a compelling value 
+proposition and a corresponding CTA. 
+
+See: Panduit.com Page requirements for 
+information on when to use web pages. 
+
+See: Landing Page Best Practices 
+
+
+Marketo Landing Pages 
+
+Landing pages are not part of the main 
+site or the site navigation 
+
+Email (Above) or Social 
+Campaign Are Entry 
+Points 
+
+
+Landing Page 
+
+
+Next steps: A 
+gated content form 
+on another landing 
+page, a landing 
+page with content, 
+or Panduit.com 
+web page 
+
+
+Landing Page Best Practices 
+
+
+• Keep it simple: Deliver a single, clear, and 
+compelling message 
+• Focused on Target Audience: Don’t try to say 
+everything to everyone - Create a Panduit.com 
+page instead. 
+• Quick Read: 
+-Include just enough text to explain the point 
+without overwhelming with too much 
+information. 
+
+-Break the text up into sections and use bullet 
+points 
+
+• Actionable Content: Address specific audience 
+pain points and provide clear post-viewing actions 
+for users. Social Proof: Use testimonials or call out 
+statistics to increase credibility and engagement. 
+• One Primary CTA: Make the most important 
+intended action clear and placed front and center. 
+• Create a co-branded header: Don’t place the 
+Panduit logo or the Partner logo in the image or 
+banner. 
+• Don’t redesign the brand look and feel to try to 
+get the users attention: Use good copy and one 
+strong image to support your message. 
+• Verify: Check mobile view and different browsers 
+and check ADA compliance 
+• Conduct A/B testing for continuous improvement 
+Strong image to 
+DO: A Simple, focused and direct 
+design driving to the main action 
+
+
+support the 
+content 
+
+Make it a quick 
+read: break text 
+up into sections 
+and/or with 
+bullet points 
+
+
+Provide clear 
+post-viewing 
+action 
+Single Primary 
+Call-to-Action 
+
+
+Image continuation 
+
+When deciding on an image 
+for the email, use a similar 
+image for the header of the 
+landing page it will lead to. 
+See: Telling a Story Through 
+Visual & Message 
+Consistency. 
+
+DON’T: Landing pages 
+should NOT try to serve all 
+audiences and speak to all 
+pain points - for this purpose 
+create a page on Panduit.com 
+
+
+Landing Page Elements of Style 
+
+Panduit Marketo landing pages follow general brand guidelines 
+outlined in this digital brand style guide, as well as landing page 
+best practices. 
+
+
+Buttons 
+
+Primary buttons are to be used for the primary Call-to-Action. It 
+is best practice to use one main CTA button per page. Use 
+hyperlinks for any secondary actions or links. 
+
+
+In Marketo, the style of the primary button is limited, but should 
+follow the design of the button used on Panduit.com as closely as 
+possible. For guidelines and additional information including 
+styling, see: 
+
+Buttons 
+
+Primary Buttons 
+
+Call-to-Action 
+Hyperlinks 
+
+Color 
+
+Color usage should be followed for consistency of use across 
+digital touch points. See: 
+
+Color 
+ADA Contrast Guidelines 
+
+Forms 
+
+For Form input elements such as text fields, drop down menus, 
+
+checkboxes, and radio buttons follow the digital guidelines as 
+closely as possible. 
+
+See: Forms 
+
+Icons 
+
+Use the same icons and style across all brand touch points in 
+Marketo as on Panduit.com. See: 
+
+Application Icons 
+Descriptive Icons: Benefit(descriptive)iconcanvas:150pxby 
+
+150px. Padding is built into the icon. 
+
+150px150px 
+Images 
+
+See: Landing Page Image Style and Sizes 
+
+Text Styles 
+
+The text styles used vary slightly from Panduit.com, however the 
+same principles apply. See: 
+
+Landing Page Text Styles 
+ADA Contrast Guidelines 
+
+
+Landing Page Text Styles 
+
+Arial 
+
+Arial Bold 
+
+Arial is used as the primary typeface 
+used in Panduit emails for all Latin 
+based languages in the styles as shown 
+on the right. 
+
+Note: Noto Sans is used as the primary typeface on 
+Panduit.com, however for email it is best practice to 
+use a commonly available typeface. 
+
+Text color 
+
+#0071B2 Active hyperlink color 
+#303030 Text color 
+#002256 Quoted text, statistics and 
+location links (text is underlined to 
+convey it is a link) 
+#193E92 Quotes and statistics 
+number 
+Text Style (Large to Small) Weight Desktop Size (px/em) Desktop Line Height 
+(Percent/em) Mobile Size (px/em) Mobile Line Height 
+(Percent/em) 
+Heading 1 Bold 52px/3.25em 130%/4.25em 30px/1.875em 130%/2.5em 
+Heading 2 Bold 36px/2.25em 140%/1.75em 24px/1.5 em 150%/.25em 
+Heading 3 Bold 28px/ 1.75em 130%/1.75em 21px/1.313em 130%/1.75em 
+Heading 4 Bold 22px/em 130%/1.75em 18px/1.125em 150%/ 1.675 em 
+Heading 5 Regular 18px/1.125em 140%/1.75em 16px/1em 140%/1.4em 
+Heading 6 Regular 14px/0.875em 130%/1.2em 14px/0.875em 150%/1.3em 
+Paragraph Large Regular 18px/1.125em 135%/1.5 em 18px/1.125em 155%/1.75em 
+Paragraph Regular 16px/1em 140%/1.375em 16px/1em 140%/1.4em 
+Paragraph (small) 
+Legal information only 
+Regular 14px/0.875em 130%/1.2em 14px/0.875em 140%/1.225em 
+
+Continued on next page 
+
+
+Landing Page Text Styles Cont. 
+
+Bulleted List 
+
+Break up large chunks of text into bulleted lists so it is easier 
+to take in. 
+
+
+Paragraph 
+
+Use paragraphs sparingly, and keep them short. It is 
+recommended to use bulleted lists instead to succinctly 
+deliver main points of the message. 
+
+Quotes and Statistics 
+
+Use quotes and statistics in emails to draw the audience into 
+the content and establish trust. Quotes add credibility and 
+humanize the message, while statistics provide concrete 
+evidence to support claims. Incorporating these elements Quotes example 
+
+
+helps to engage the audience and enhance the effectiveness 
+
+of the email campaign. 
+
+To make quotes stand out from other text on the page the 
+quoted text (color #002256) is center aligned on a light 
+dark blue #F4F7FC background. Statistics percentage is 
+displayed in a base medium blue #193E92. 
+
+Statistics example 
+
+Time, Date, Location 
+
+For events and webinars, display the time, date, and location 
+information as shown. The icons are available in Marketo, but 
+can also be requested from the web and mobile team if 
+needed. Add alternative text to the icons to label them 
+
+
+Time and Date 
+
+Date Range and Location 
+
+appropriately - date or location. 
+
+
+
+Header and Footer Brand Rules 
+
+Panduit Logo 
+
+For North America use the Panduit logo with the registered 
+trademark symbol ®. For all other regions use the Panduit logo 
+with the trademark symbol (™) in both header and footer. 
+
+
+The Panduit registered trademark logo can only be used for 
+North America or Canada. 
+
+
+Use the Panduit trademark logo in all regions 
+
+Header 
+
+See Panduit Logo for details on logo usage. 
+
+
+Header with the Panduit Logo with the Trademark 
+
+
+PanGen Header 
+
+200200px by 
+85px200px200px 
+Co-Branded Header 
+
+Co-Brand Logo Image Size Approx: 200px by 
+85px 
+
+Landing Page Footer 
+
+See Header for information on Panduit logo usage. 
+
+
+Footer 
+
+
+Landing Pages: Images 
+
+Image Style 
+
+To add continuity, cohesiveness to campaigns, and to ensure 
+brand consistency, follow the digital image best practices 
+below: 
+
+Images 
+Image Alternative Text 
+Story telling through visual consistency 
+
+One column layout 
+
+Use a single column layout primarily as it aids reading and 
+works across multiple display sizes. 
+
+Main Image - Full Width: 1440px x 360px (4:1 Aspect Ratio) 
+Image Within Page Margins: 1220px X 300px (4.07:1 
+Aspect Ratio) 
+
+Landing Pages: Images Cont. 
+
+Two column layout -Articles with links Sponsor Logo and Feature Icons 
+
+Two column layout may be used for presenter information 
+
+Sponsor logos can be displayed from one up to four in a row. 
+
+or for links to articles etc. when the text is not lengthy. 
+
+Note: For vector-based graphics and logos the image size 
+
+NOTE: When using links with images, add the hyperlink to 
+
+supplied may need to be double the stated size to display at 
+
+both the image and the text. Never add the hyperlink to the 
+
+higher quality and avoid pixelation. 
+
+image only. 
+
+Image 2 Column Full-Width: 690px X 345px (2:1 Aspect Ratio) 
+
+
+Two column layout - articles 
+
+
+200200px by 
+85px200px200px 
+200200px by 
+85px200px200px 
+Image 2 Column Margins: 400px X 360px 
+
+(4:1 Aspect Ratio) 
+150px150px 
+Image 2 Column Full-Width: 690px X 345px (2:1 Aspect Ratio) 
+
+
+Gated Content Landing Page: Forms 
+
+To capture the audience’s interest: 
+
+• Start by briefly explaining the relevance of 
+the content to their needs. 
+• Incorporate quotes or statistics to 
+enhance credibility and generate curiosity. 
+• For gated content, emphasize why it’s 
+valuable for the audience. 
+• Adhere to form best practices, ensuring 
+clarity and ease of completion, and 
+include feedback. 
+• After submission, provide a confirmation 
+message along with the ability to 
+download the content. 
+Gated Content Landing Page: 
+White Paper 
+
+
+
+Landing Pages: Webinar/Event 
+
+Webinar/Event Landing Pages: 
+
+• Lead with a clear value proposition 
+using the header image and title/date 
+section to immediately communicate 
+the webinar’s benefit, think what 
+
+attendees will learn or gain. 
+
+• Use scannable, benefit-driven content 
+by highlighting 2–3 key takeaways using 
+bullet points to improve readability 
+and engagement. 
+• Make the CTA stand out. Place a bold, 
+action-oriented CTA such as “Reserve 
+My Spot” above the fold. 
+
+
+• Showcase expert presenters for 
+credibility. Include headshots, titles, and 
+short bios to build trust and authority, 
+especially if presenters are well-known 
+or industry leaders. 
+• Adhere to form best practices, ensuring 
+clarity and ease of completion, and 
+include feedback. 
+• After submission, provide a 
+confirmation message along with the 
+
+ability to download the content. 
+
+
+Webinar Registration Page 
+
+Event Landing Page With 
+Registration Form 
+
+
+Landing Pages: Product 
+
+Product Landing Page: 
+
+• Above the fold must deliver a clear value 
+proposition, strong headline, and CTA. 
+This is where users decide whether to 
+stay or bounce. 
+• Use dynamic content elements, GIFs, 
+videos, and interactive graphics to 
+explain product features and improve 
+engagement. These elements should be 
+strategically placed to support the 
+user journey. 
+• Lead with benefits and not specs. Start 
+with what the product does for the user 
+i.e. solve pain points, save time, 
+reduce cost. 
+Product Landing Page 
+
+Resources 
+
+
+Resources 
+
+Guides Icons 
+
+• Panduit Brand Style Guide 
+• Grammar Guide 
+• Digital Content Naming & Tagging Guide 
+• Adding DAM and YouTube Videos 
+• Digital Content Planning Guide 
+• Marketo Email Layouts 
+Digital Enablement New Request Form 
+
+• Digital Enablement Request Form 
+Panduit.com New Page Request Guides 
+
+• Markets & Applications form (older version of the page) 
+• Application Parent Page -Content Guide 
+• Applications Sub-Page -Content Guide (for applications 
+that have one or more sub-pages) 
+• Featured Product or System Page - Content Guide 
+• Icon Library (Brand Central) 
+External Resources 
+
+• Web Content Accessibility Guidelines (WCAG) 2.0 
+• Text and Background Contrast Checker 
+• Animation guidelines to avoid triggering seizure disorders 
+
+Contact Information 
+
+For more information on how to use the elements and messaging in the Panduit Digital Style Guide, please contact: 
+
+Dawn Leach Nevin Vo Omar Ruiz 
+
+Manager, Global Brand -Overall inquiries regarding Panduit User Experience Designer -Panduit digital branding inquiries Marketing Automation Manager - Marketo landing pages and 
+branding, brand@panduit.com e-mail templates inquiries 
+
+
+CPCB220--WW-ENG REV 9/2025 
+
+
