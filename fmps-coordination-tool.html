@@ -381,16 +381,26 @@
                 </div>
                 <div class="settings-grid">
                     <div class="bento-card">
-                        <div class="card-header"><h3>Data Connection</h3></div>
-                        <p class="card-desc">Configure SharePoint sync for multi-user collaboration.</p>
-                        <label class="neo-label">SharePoint Site URL</label>
-                        <input type="url" id="sp-site-url" class="neo-input neo-input-full" placeholder="https://panduit.sharepoint.com/sites/YourSite">
-                        <label class="neo-label">Document Library Name</label>
-                        <input type="text" id="sp-library-name" class="neo-input neo-input-full" value="FMPSData" placeholder="FMPSData">
-                        <div class="btn-row">
-                            <button class="neo-btn neo-btn-primary" id="save-config-btn">Save & Connect</button>
-                            <button class="neo-btn" id="test-connection-btn">Test</button>
+                        <div class="card-header"><h3>Data Storage</h3></div>
+                        <p class="card-desc">Connect a local/synced folder to store data. If the folder is inside OneDrive or SharePoint Sync, all users sharing that folder will stay in sync automatically.</p>
+                        <div id="fs-status" class="sync-status-box" style="margin-bottom:12px;padding:8px 12px;border-radius:8px;background:var(--surface);font-size:0.85rem;">
+                            Status: <span id="fs-status-text">Not connected (using browser storage only)</span>
                         </div>
+                        <div class="btn-row">
+                            <button class="neo-btn neo-btn-primary" id="connect-folder-btn">Connect Folder</button>
+                            <button class="neo-btn" id="test-connection-btn">Test</button>
+                            <button class="neo-btn neo-btn-danger" id="disconnect-btn" style="display:none;">Disconnect</button>
+                        </div>
+                        <details style="margin-top:12px;">
+                            <summary style="cursor:pointer;font-size:0.8rem;color:var(--primary-blue);">Advanced: SharePoint REST (same-origin only)</summary>
+                            <label class="neo-label" style="margin-top:8px;">SharePoint Site URL</label>
+                            <input type="url" id="sp-site-url" class="neo-input neo-input-full" placeholder="https://panduit.sharepoint.com/sites/YourSite">
+                            <label class="neo-label">Document Library Name</label>
+                            <input type="text" id="sp-library-name" class="neo-input neo-input-full" value="FMPSData" placeholder="FMPSData">
+                            <div class="btn-row" style="margin-top:8px;">
+                                <button class="neo-btn neo-btn-primary" id="save-config-btn">Save & Connect</button>
+                            </div>
+                        </details>
                     </div>
                     <div class="bento-card">
                         <div class="card-header"><h3>Manage Options</h3></div>

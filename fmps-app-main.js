@@ -14,6 +14,11 @@ let weeklyOffset = 0; // 0 = current week of the month
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Restore file system handle if previously connected
+    if (storage.mode === 'filesystem') {
+        await storage.restoreFolder();
+    }
+
     appData = await storage.load();
 
     // Seed data: if no events exist, load from spreadsheet data
@@ -32,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCurrentView();
         showSyncStatus('synced');
     };
-    storage.startSync(15000);
+    storage.startSync(storage.mode === 'filesystem' ? 5000 : 15000);
 
     initNavigation();
     initCalendar();
@@ -1466,6 +1471,40 @@ function initSettings() {
     document.getElementById('sp-site-url').value = storage.spSiteUrl || '';
     document.getElementById('sp-library-name').value = storage.spLibrary || 'FMPSData';
 
+    // File System Access — Connect Folder button
+    document.getElementById('connect-folder-btn').addEventListener('click', async () => {
+        try {
+            const connected = await storage.connectFolder();
+            if (!connected) return; // user cancelled picker
+            appData = await storage.migrateToFileSystem(appData);
+            storage.startSync(5000);
+            renderCurrentView();
+            updateFsStatus();
+            alert('Connected! Data will now save to your selected folder. If it\'s inside OneDrive/SharePoint Sync, other users will see changes automatically.');
+        } catch (e) {
+            alert(e.message);
+        }
+    });
+
+    document.getElementById('disconnect-btn').addEventListener('click', async () => {
+        if (!confirm('Disconnect folder? Data will revert to browser-only storage.')) return;
+        await storage.disconnect();
+        updateFsStatus();
+        alert('Disconnected. Using browser storage only.');
+    });
+
+    // Restore previously connected folder on settings load
+    (async () => {
+        if (storage.mode === 'filesystem') {
+            const restored = await storage.restoreFolder();
+            if (restored) {
+                storage.startSync(5000);
+            }
+            updateFsStatus();
+        }
+    })();
+
+    // SharePoint REST (advanced)
     document.getElementById('save-config-btn').addEventListener('click', async () => {
         const url = document.getElementById('sp-site-url').value.trim();
         const lib = document.getElementById('sp-library-name').value.trim();
@@ -1475,6 +1514,7 @@ function initSettings() {
                 appData = await storage.migrateToSharePoint(appData);
                 storage.startSync(15000);
                 renderCurrentView();
+                updateFsStatus();
                 alert('Connected to SharePoint! Data will now sync across users.');
             } catch (e) {
                 alert(e.message);
@@ -1492,6 +1532,26 @@ function initSettings() {
 
     document.getElementById('config-category').addEventListener('change', renderSettings);
     document.getElementById('config-add-btn').addEventListener('click', addConfigValue);
+
+    updateFsStatus();
+}
+
+function updateFsStatus() {
+    const statusText = document.getElementById('fs-status-text');
+    const disconnectBtn = document.getElementById('disconnect-btn');
+    if (storage.mode === 'filesystem' && storage._dirHandle) {
+        statusText.textContent = `Connected to folder: "${storage._dirHandle.name}" — syncing every 5 seconds`;
+        statusText.style.color = 'green';
+        disconnectBtn.style.display = '';
+    } else if (storage.mode === 'sharepoint') {
+        statusText.textContent = `SharePoint mode: ${storage.spSiteUrl}`;
+        statusText.style.color = 'green';
+        disconnectBtn.style.display = 'none';
+    } else {
+        statusText.textContent = 'Not connected (using browser storage only)';
+        statusText.style.color = '';
+        disconnectBtn.style.display = 'none';
+    }
 }
 
 function renderSettings() {
